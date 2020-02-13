@@ -1,0 +1,1197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChatAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="A_U_Management">
+    <Key>
+      <PropertyRef Name="UserUID" />
+    </Key>
+    <Property Name="UserUID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateofBirth" Type="DateTime" Precision="3" />
+    <Property Name="Qualification" Type="Int32" />
+    <Property Name="Occupation" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserRole" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="A_U_MenuMaster">
+    <Key>
+      <PropertyRef Name="MenuIdentity" />
+    </Key>
+    <Property Name="MenuIdentity" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MenuName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Parent_MenuID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_Roll" Type="Int32" Nullable="false" />
+    <Property Name="MenuFileName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MenuURL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USE_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="A_U_Token">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="450" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClientId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IssuedUTC" Type="DateTime" Precision="7" />
+    <Property Name="ExpireUTC" Type="DateTime" Precision="7" />
+    <Property Name="ProtectedTicket" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="A_WorkflowFormMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FM_PKID" Type="Int32" Nullable="false" />
+    <Property Name="FM_FormCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FM_FormName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FM_WorkflowTime" Type="Int32" />
+    <Property Name="FM_FormPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FM_Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FM_Crby" Type="Int32" />
+    <Property Name="FM_CrOn" Type="DateTime" Precision="7" />
+    <Property Name="FM_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="A_WorkflowTransDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WTM_MasID" Type="Int32" Nullable="false" />
+    <Property Name="WTD_TransID" Type="Int32" />
+    <Property Name="WTD_InwardFileNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTD_TransDate" Type="DateTime" Precision="7" />
+    <Property Name="WTD_TransFrom" Type="Int32" />
+    <Property Name="WTD_To" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTD_Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTD_WFStatsID" Type="Int32" />
+    <Property Name="WTD_WFActionID" Type="Int32" />
+    <Property Name="WTD_SentBy" Type="Int32" />
+    <Property Name="WTD_WFStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTD_SentOn" Type="Int32" />
+  </EntityType>
+  <EntityType Name="A_WorkflowTransMailBoxes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WTM_MasID" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="WTM_TransID" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WTM_InwardFileNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTM_TrnFrom" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WTM_TrnTo" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WTM_UsrOrGrp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTM_ReadFlg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTM_TrnStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="A_WorkflowTransMasters">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WTM_MasID" Type="Int32" Nullable="false" />
+    <Property Name="WTM_WorkFlowID" Type="Int32" />
+    <Property Name="WTM_DOCID" Type="Int32" />
+    <Property Name="WTM_FormCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTM_Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WTM_AttachID" Type="Int32" />
+    <Property Name="WTM_CrBy" Type="Int32" />
+    <Property Name="WTM_IsDisposed" Type="Int32" />
+    <Property Name="WTM_DisposedBy" Type="Int32" />
+    <Property Name="WTM_WFProcessID" Type="Int32" />
+    <Property Name="WTM_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ChatConversation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ConversationID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FromName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FromId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ToName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ToId" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ChatMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="FromName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FromId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ToName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ToId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsOpened" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CourseImage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseID" Type="Int32" />
+    <Property Name="CourseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CourseIcons" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EmployeeLeaveDetail">
+    <Key>
+      <PropertyRef Name="EmployeeLeaveDetailsID" />
+    </Key>
+    <Property Name="EmployeeLeaveDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LeaveType" Type="Int32" />
+    <Property Name="OpeningBalance" Type="Int32" />
+    <Property Name="LeaveUpdatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ExaminationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="ExaminationName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExternalLogin">
+    <Key>
+      <PropertyRef Name="GID" />
+    </Key>
+    <Property Name="GID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Access_Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Family_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Given_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="FacultyImage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserUID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Documents" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="FacultyID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FacultyName" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="FacultyMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserUID" Type="Int32" />
+    <Property Name="FacultyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Qualification" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EmailId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ContactNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Experience" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Skills" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Languages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Interests" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProfilePicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FeedbackRating">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FacultyName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SkillWiseRating" Type="Int32" />
+    <Property Name="TeachnigRating" Type="Int32" />
+    <Property Name="ConductRating" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Leave_StatusMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveStatusName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LeaveHistoryMaster">
+    <Key>
+      <PropertyRef Name="LeaveHistoryMasterID" />
+    </Key>
+    <Property Name="LeaveHistoryMasterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveTypeID" Type="Int32" />
+    <Property Name="TotalLeaveTaken" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TotalLeaveRemaining" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LeaveStartingDate" Type="DateTime" Precision="3" />
+    <Property Name="LeaveEndingDate" Type="DateTime" Precision="3" />
+    <Property Name="LeaveMonthlyDetails" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LeaveCount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="LeaveCredited" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LeaveDebited" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LeaveMaster" Relationship="Self.FK_LeaveHistoryMaster_LeaveMaster" FromRole="LeaveHistoryMaster" ToRole="LeaveMaster" />
+  </EntityType>
+  <EntityType Name="LeaveList">
+    <Key>
+      <PropertyRef Name="LeaveConditionID" />
+    </Key>
+    <Property Name="LeaveConditionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="LeaveTypeID" Type="Int32" />
+    <Property Name="LeaveCredited" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LeaveDebited" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BalanceRemaining" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BasicPayOnLeave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LeaveEncashed" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LeaveStartingDate" Type="DateTime" Precision="3" />
+    <Property Name="LeaveEndingDate" Type="DateTime" Precision="3" />
+    <Property Name="AdvanceCredit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SalaryDeductionInPercentage" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SalaryDeductionInRupees" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MinLeave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MaxLeave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LeaveMaster" Relationship="Self.FK_LeaveList_LeaveMaster" FromRole="LeaveList" ToRole="LeaveMaster" />
+  </EntityType>
+  <EntityType Name="LeaveMaster">
+    <Key>
+      <PropertyRef Name="LeaveMasterID" />
+    </Key>
+    <Property Name="LeaveMasterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Days" Type="Int32" />
+    <NavigationProperty Name="LeaveHistoryMasters" Relationship="Self.FK_LeaveHistoryMaster_LeaveMaster" FromRole="LeaveMaster" ToRole="LeaveHistoryMaster" />
+    <NavigationProperty Name="LeaveLists" Relationship="Self.FK_LeaveList_LeaveMaster" FromRole="LeaveMaster" ToRole="LeaveList" />
+  </EntityType>
+  <EntityType Name="LeaveUpdateCountDetail">
+    <Key>
+      <PropertyRef Name="LeaveCountID" />
+    </Key>
+    <Property Name="LeaveCountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LeaveType" Type="Int32" />
+    <Property Name="LeaveUpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="NoOfDays" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="message">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Msg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Policytable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PolicyType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Documents" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SessionDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LoggedIn" Type="Boolean" />
+    <Property Name="LoggedInTime" Type="DateTime" Precision="3" />
+    <Property Name="LoggedOutTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="StudentChapter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" />
+    <Property Name="CourseID" Type="Int32" />
+    <Property Name="ChapterID" Type="Int32" />
+    <Property Name="Level1" Type="Boolean" />
+    <Property Name="Level2" Type="Boolean" />
+    <Property Name="Level3" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StudentDocumentDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FileId" Type="Int32" />
+    <Property Name="FolderId" Type="Int32" />
+    <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Documents" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentSize" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StudentFilePlanDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="StudentFolderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FileId" Type="Int32" />
+    <Property Name="FolderName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="StudentImage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentUID" Type="Int32" />
+    <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Documents" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StudentsTest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="Int32" />
+    <Property Name="CourseId" Type="Int32" />
+    <Property Name="ChapterId" Type="Int32" />
+    <Property Name="MarksObtained" Type="Int32" />
+    <Property Name="GradeObtained" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Boolean" Nullable="false" />
+    <Property Name="Level" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DomainId" Type="Int32" />
+    <Property Name="TechnologyId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="StudentTest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="StudentId" Type="Int32" />
+    <Property Name="CourseId" Type="Int32" />
+    <Property Name="TestName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MarksObtained" Type="Int32" />
+    <Property Name="GradeObtained" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StudetTestPaperResult">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="TestPaperId" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="TestPaperName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MarksObtained" Type="Int32" />
+    <Property Name="GradeObtained" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCartDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Student_Id" Type="Int32" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblChapterMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChapterName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="Author" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCourseMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblDomainMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DomainName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDurationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Duration" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tblEnrollDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USNNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="StudentID" Type="Int32" />
+    <Property Name="IsPaid" Type="Boolean" Nullable="false" />
+    <Property Name="StartedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGenderMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tblLevelMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LevelName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblOccupationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tblOptionMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionId" Type="Int32" />
+    <Property Name="Option" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPresentationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PresentationName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PresentationMode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="Chapter" Type="Int32" />
+    <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblPriceMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DurationId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblQualificationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Qualification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tblQuestionBankMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="QuestionBankName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Version" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblQuestionbankQuestion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionbankId" Type="Int32" />
+    <Property Name="QuestionId" Type="Int32" />
+    <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" />
+    <Property Name="ChapterId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblQuestionMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Chapter" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LevelID" Type="Int32" Nullable="false" />
+    <Property Name="ExamLevel" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblRoleMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentCours">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CourseId" Type="Int32" />
+    <Property Name="CompletionStatus" Type="Boolean" Nullable="false" />
+    <Property Name="StartedOn" Type="DateTime" Precision="3" />
+    <Property Name="CompletedOn" Type="DateTime" Precision="3" />
+    <Property Name="TechnologyId" Type="Int32" />
+    <Property Name="DomainId" Type="Int32" />
+    <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentUID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DateofBirth" Type="DateTime" Precision="3" />
+    <Property Name="Gender" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Qualification" Type="Int32" />
+    <Property Name="Occupation" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="StreetAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CityAddress" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblsubmitAnswer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Question" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Answer" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Score" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblTechnologyMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TechnologyName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="Assignments" Type="Int32" />
+    <Property Name="Rating" Type="Double" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="Images" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblTestMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TestName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="Chapter" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="TotalScore" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblTestQuestionMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Domain" Type="Int32" />
+    <Property Name="Technology" Type="Int32" />
+    <Property Name="Course" Type="Int32" />
+    <Property Name="Chapter" Type="Int32" />
+    <Property Name="Test" Type="Int32" />
+    <Property Name="Question" Type="Int32" />
+    <Property Name="Answer" Type="Int32" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TestPaper">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TestPaperId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TestPaperName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DomainId" Type="Int32" />
+    <Property Name="TechnologyId" Type="Int32" />
+    <Property Name="CourseId" Type="Int32" />
+    <Property Name="ChapterId" Type="Int32" />
+    <Property Name="QuestionId" Type="Int32" />
+    <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="IsSaved" Type="Boolean" />
+    <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TestPaperName">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TestPaperId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TPName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Standard" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="LastUpdated" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Token">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="450" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClientId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IssuedUTC" Type="DateTime" Precision="7" />
+    <Property Name="ExpireUTC" Type="DateTime" Precision="7" />
+    <Property Name="ProtectedTicket" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TransactionTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Amount" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StudentId" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="CourseId" Type="Int32" />
+    <Property Name="Hash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UploadDocument">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="UploadType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentSize" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Documents" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Comments" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="UploadedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UploadedOn" Type="DateTime" Precision="7" />
+    <Property Name="CourseID" Type="Int32" />
+    <Property Name="ChapterID" Type="Int32" />
+    <Property Name="TechnologyID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserAttendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Attendance" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="UserBiometric">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Finger" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Authentication" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VA_Workflow_Leave_Master">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MasID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LeaveType" Type="Int32" />
+    <Property Name="LeaveApplicationNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OpeningBalance" Type="Int32" />
+    <Property Name="FromDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ToDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LeaveTaken" Type="Int32" />
+    <Property Name="ClosingBalance" Type="Int32" />
+    <Property Name="StatusID" Type="Int32" />
+    <Property Name="NoOfDays" Type="Int32" />
+    <Property Name="LeaveAppliedDate" Type="DateTime" Precision="3" />
+    <Property Name="From_User" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="To_User" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FormCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LeaveSubject" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Trans_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Approvalone" Type="Boolean" />
+    <Property Name="Approvaltwo" Type="Boolean" />
+    <Property Name="Approvalthree" Type="Boolean" />
+    <Property Name="ApprovaloneDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovaltwoDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovalthreeDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastUpdatedDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LeavePurpose" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Workflow_Comment_HistoryTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserUID" Type="Int32" />
+    <Property Name="MailId" Type="Int32" />
+    <Property Name="WorkflowType" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentedUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ToUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WorkflowStageMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="WorkflowType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WorkflowStage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="A_U_Client">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="450" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Secret" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicationType" Type="Int32" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="RefreshTokenLifetime" Type="Int32" />
+    <Property Name="AllowedOrigin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="A_U_FunctionMaster">
+    <Key>
+      <PropertyRef Name="FunctionID" />
+    </Key>
+    <Property Name="FunctionID" Type="Int32" Nullable="false" />
+    <Property Name="FunctionName" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LastUpdated" Type="DateTime" Precision="7" />
+  </EntityType>
+  <EntityType Name="ExamLevel">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IsEnabled" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExaminationLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="useractivity">
+    <Key>
+      <PropertyRef Name="OnlineID" />
+    </Key>
+    <Property Name="OnlineID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ConnectionID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Avatar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_LeaveHistoryMaster_LeaveMaster">
+    <End Role="LeaveMaster" Type="Self.LeaveMaster" Multiplicity="0..1" />
+    <End Role="LeaveHistoryMaster" Type="Self.LeaveHistoryMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LeaveMaster">
+        <PropertyRef Name="LeaveMasterID" />
+      </Principal>
+      <Dependent Role="LeaveHistoryMaster">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LeaveList_LeaveMaster">
+    <End Role="LeaveMaster" Type="Self.LeaveMaster" Multiplicity="0..1" />
+    <End Role="LeaveList" Type="Self.LeaveList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LeaveMaster">
+        <PropertyRef Name="LeaveMasterID" />
+      </Principal>
+      <Dependent Role="LeaveList">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ChatAppEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="A_U_Management" EntityType="Self.A_U_Management" />
+    <EntitySet Name="A_U_MenuMaster" EntityType="Self.A_U_MenuMaster" />
+    <EntitySet Name="A_U_Token" EntityType="Self.A_U_Token" />
+    <EntitySet Name="A_WorkflowFormMaster" EntityType="Self.A_WorkflowFormMaster" />
+    <EntitySet Name="A_WorkflowTransDetails" EntityType="Self.A_WorkflowTransDetails" />
+    <EntitySet Name="A_WorkflowTransMailBoxes" EntityType="Self.A_WorkflowTransMailBoxes" />
+    <EntitySet Name="A_WorkflowTransMasters" EntityType="Self.A_WorkflowTransMasters" />
+    <EntitySet Name="ChatConversations" EntityType="Self.ChatConversation" />
+    <EntitySet Name="ChatMasters" EntityType="Self.ChatMaster" />
+    <EntitySet Name="CourseImages" EntityType="Self.CourseImage" />
+    <EntitySet Name="EmployeeLeaveDetails" EntityType="Self.EmployeeLeaveDetail" />
+    <EntitySet Name="ExaminationMasters" EntityType="Self.ExaminationMaster" />
+    <EntitySet Name="ExternalLogins" EntityType="Self.ExternalLogin" />
+    <EntitySet Name="FacultyImages" EntityType="Self.FacultyImage" />
+    <EntitySet Name="FacultyMasters" EntityType="Self.FacultyMaster" />
+    <EntitySet Name="FeedbackRatings" EntityType="Self.FeedbackRating" />
+    <EntitySet Name="Leave_StatusMaster" EntityType="Self.Leave_StatusMaster" />
+    <EntitySet Name="LeaveHistoryMasters" EntityType="Self.LeaveHistoryMaster" />
+    <EntitySet Name="LeaveLists" EntityType="Self.LeaveList" />
+    <EntitySet Name="LeaveMasters" EntityType="Self.LeaveMaster" />
+    <EntitySet Name="LeaveUpdateCountDetails" EntityType="Self.LeaveUpdateCountDetail" />
+    <EntitySet Name="messages" EntityType="Self.message" />
+    <EntitySet Name="Policytables" EntityType="Self.Policytable" />
+    <EntitySet Name="SessionDetails" EntityType="Self.SessionDetail" />
+    <EntitySet Name="StudentChapters" EntityType="Self.StudentChapter" />
+    <EntitySet Name="StudentDocumentDetails" EntityType="Self.StudentDocumentDetail" />
+    <EntitySet Name="StudentFilePlanDetails" EntityType="Self.StudentFilePlanDetail" />
+    <EntitySet Name="StudentFolderDetails" EntityType="Self.StudentFolderDetail" />
+    <EntitySet Name="StudentImages" EntityType="Self.StudentImage" />
+    <EntitySet Name="StudentsTests" EntityType="Self.StudentsTest" />
+    <EntitySet Name="StudentTests" EntityType="Self.StudentTest" />
+    <EntitySet Name="StudetTestPaperResults" EntityType="Self.StudetTestPaperResult" />
+    <EntitySet Name="tblCartDetails" EntityType="Self.tblCartDetail" />
+    <EntitySet Name="tblChapterMasters" EntityType="Self.tblChapterMaster" />
+    <EntitySet Name="tblCourseMasters" EntityType="Self.tblCourseMaster" />
+    <EntitySet Name="tblDomainMasters" EntityType="Self.tblDomainMaster" />
+    <EntitySet Name="tblDurationMasters" EntityType="Self.tblDurationMaster" />
+    <EntitySet Name="tblEnrollDetails" EntityType="Self.tblEnrollDetail" />
+    <EntitySet Name="tblGenderMasters" EntityType="Self.tblGenderMaster" />
+    <EntitySet Name="tblLevelMasters" EntityType="Self.tblLevelMaster" />
+    <EntitySet Name="tblOccupationMasters" EntityType="Self.tblOccupationMaster" />
+    <EntitySet Name="tblOptionMasters" EntityType="Self.tblOptionMaster" />
+    <EntitySet Name="tblPresentationMasters" EntityType="Self.tblPresentationMaster" />
+    <EntitySet Name="tblPriceMasters" EntityType="Self.tblPriceMaster" />
+    <EntitySet Name="tblQualificationMasters" EntityType="Self.tblQualificationMaster" />
+    <EntitySet Name="tblQuestionBankMasters" EntityType="Self.tblQuestionBankMaster" />
+    <EntitySet Name="tblQuestionbankQuestions" EntityType="Self.tblQuestionbankQuestion" />
+    <EntitySet Name="tblQuestionMasters" EntityType="Self.tblQuestionMaster" />
+    <EntitySet Name="tblRoleMasters" EntityType="Self.tblRoleMaster" />
+    <EntitySet Name="tblStudentCourses" EntityType="Self.tblStudentCours" />
+    <EntitySet Name="tblStudentDetails" EntityType="Self.tblStudentDetail" />
+    <EntitySet Name="tblsubmitAnswers" EntityType="Self.tblsubmitAnswer" />
+    <EntitySet Name="tblTechnologyMasters" EntityType="Self.tblTechnologyMaster" />
+    <EntitySet Name="tblTestMasters" EntityType="Self.tblTestMaster" />
+    <EntitySet Name="tblTestQuestionMasters" EntityType="Self.tblTestQuestionMaster" />
+    <EntitySet Name="TestPapers" EntityType="Self.TestPaper" />
+    <EntitySet Name="TestPaperNames" EntityType="Self.TestPaperName" />
+    <EntitySet Name="Tokens" EntityType="Self.Token" />
+    <EntitySet Name="TransactionTables" EntityType="Self.TransactionTable" />
+    <EntitySet Name="UploadDocuments" EntityType="Self.UploadDocument" />
+    <EntitySet Name="UserAttendances" EntityType="Self.UserAttendance" />
+    <EntitySet Name="UserBiometrics" EntityType="Self.UserBiometric" />
+    <EntitySet Name="VA_Workflow_Leave_Master" EntityType="Self.VA_Workflow_Leave_Master" />
+    <EntitySet Name="Workflow_Comment_HistoryTable" EntityType="Self.Workflow_Comment_HistoryTable" />
+    <EntitySet Name="WorkflowStageMasters" EntityType="Self.WorkflowStageMaster" />
+    <EntitySet Name="A_U_Client" EntityType="Self.A_U_Client" />
+    <EntitySet Name="A_U_FunctionMaster" EntityType="Self.A_U_FunctionMaster" />
+    <EntitySet Name="ExamLevels" EntityType="Self.ExamLevel" />
+    <EntitySet Name="useractivities" EntityType="Self.useractivity" />
+    <AssociationSet Name="FK_LeaveHistoryMaster_LeaveMaster" Association="Self.FK_LeaveHistoryMaster_LeaveMaster">
+      <End Role="LeaveMaster" EntitySet="LeaveMasters" />
+      <End Role="LeaveHistoryMaster" EntitySet="LeaveHistoryMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LeaveList_LeaveMaster" Association="Self.FK_LeaveList_LeaveMaster">
+      <End Role="LeaveMaster" EntitySet="LeaveMasters" />
+      <End Role="LeaveList" EntitySet="LeaveLists" />
+    </AssociationSet>
+    <FunctionImport Name="Proc_IsValidUser" ReturnType="Collection(ChatAppModel.Proc_IsValidUser_Result)">
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_MailBox_ChangeStatus">
+      <Parameter Name="WTM_MasID" Mode="In" Type="Decimal" />
+      <Parameter Name="WTM_TransID" Mode="In" Type="Decimal" />
+      <Parameter Name="WTM_TrnTo" Mode="In" Type="Decimal" />
+      <Parameter Name="WTM_TrnStatus" Mode="In" Type="String" />
+      <Parameter Name="iRetOperation" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PROC_Menu_Delete">
+      <Parameter Name="MenuIdentity" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PROC_Menu_Insert" ReturnType="Collection(String)">
+      <Parameter Name="MenuID" Mode="In" Type="String" />
+      <Parameter Name="MenuName" Mode="In" Type="String" />
+      <Parameter Name="Parent_MenuID" Mode="In" Type="String" />
+      <Parameter Name="User_Roll" Mode="In" Type="Int32" />
+      <Parameter Name="MenuFileName" Mode="In" Type="String" />
+      <Parameter Name="MenuURL" Mode="In" Type="String" />
+      <Parameter Name="USE_YN" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PROC_Menu_Select" ReturnType="Collection(ChatAppModel.PROC_Menu_Select_Result)">
+      <Parameter Name="MenuID" Mode="In" Type="String" />
+      <Parameter Name="MenuName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PROC_Menu_Update" ReturnType="Collection(String)">
+      <Parameter Name="MenuIdentity" Mode="In" Type="Int32" />
+      <Parameter Name="MenuID" Mode="In" Type="String" />
+      <Parameter Name="MenuName" Mode="In" Type="String" />
+      <Parameter Name="Parent_MenuID" Mode="In" Type="String" />
+      <Parameter Name="User_Roll" Mode="In" Type="Int32" />
+      <Parameter Name="MenuFileName" Mode="In" Type="String" />
+      <Parameter Name="MenuURL" Mode="In" Type="String" />
+      <Parameter Name="USE_YN" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PROC_MenubyUserRole_Select" ReturnType="Collection(ChatAppModel.PROC_MenubyUserRole_Select_Result)">
+      <Parameter Name="Role" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PROC_UserRoles_Select" ReturnType="Collection(ChatAppModel.PROC_UserRoles_Select_Result)">
+      <Parameter Name="Role" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_WorkFLow_Get_ConditionalMailBox" ReturnType="Collection(ChatAppModel.Proc_WorkFLow_Get_ConditionalMailBox_Result)">
+      <Parameter Name="pintUserId" Mode="In" Type="Int32" />
+      <Parameter Name="pchrStatus" Mode="In" Type="String" />
+      <Parameter Name="fromdate" Mode="In" Type="String" />
+      <Parameter Name="todate" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_WorkFLow_Get_ConditionalSentMail" ReturnType="Collection(ChatAppModel.Proc_WorkFLow_Get_ConditionalSentMail_Result)">
+      <Parameter Name="pintUserId" Mode="In" Type="Int32" />
+      <Parameter Name="pchrStatus" Mode="In" Type="String" />
+      <Parameter Name="fromdate" Mode="In" Type="DateTime" />
+      <Parameter Name="todate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_WorkFLow_Get_MailBox" ReturnType="Collection(ChatAppModel.Proc_WorkFLow_Get_MailBox_Result)">
+      <Parameter Name="pintUserId" Mode="In" Type="Int32" />
+      <Parameter Name="pchrStatus" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_WorkFLow_Get_SentMail" ReturnType="Collection(ChatAppModel.Proc_WorkFLow_Get_SentMail_Result)">
+      <Parameter Name="pintUserId" Mode="In" Type="Int32" />
+      <Parameter Name="pchrStatus" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_WorkFlow_Trans_Details_Save">
+      <Parameter Name="WTM_MasID" Mode="In" Type="Int32" />
+      <Parameter Name="WTD_TransID" Mode="In" Type="Int32" />
+      <Parameter Name="WTD_TransFrom" Mode="In" Type="Int32" />
+      <Parameter Name="WTD_To" Mode="In" Type="String" />
+      <Parameter Name="WTD_Remarks" Mode="In" Type="String" />
+      <Parameter Name="WTD_WFStatsID" Mode="In" Type="Int32" />
+      <Parameter Name="WTD_WFActionID" Mode="In" Type="Int32" />
+      <Parameter Name="WTD_SentBy" Mode="In" Type="Int32" />
+      <Parameter Name="iRetTransID" Mode="InOut" Type="Int32" />
+      <Parameter Name="iRetOperation" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_WorkFlow_Trans_MailBox_Save">
+      <Parameter Name="WTM_MasID" Mode="In" Type="Decimal" />
+      <Parameter Name="WTM_TransID" Mode="In" Type="Decimal" />
+      <Parameter Name="WTM_TrnFrom" Mode="In" Type="Decimal" />
+      <Parameter Name="WTM_TrnTo" Mode="In" Type="Decimal" />
+      <Parameter Name="WTM_UsrOrGrp" Mode="In" Type="String" />
+      <Parameter Name="WTM_ReadFlg" Mode="In" Type="String" />
+      <Parameter Name="WTM_TrnStatus" Mode="In" Type="String" />
+      <Parameter Name="iRetOperation" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_WorkFlow_Trans_Master_Save">
+      <Parameter Name="WTM_MasID" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_WorkFlowID" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_FormCode" Mode="In" Type="String" />
+      <Parameter Name="WTM_Subject" Mode="In" Type="String" />
+      <Parameter Name="WTM_Privacy" Mode="In" Type="String" />
+      <Parameter Name="WTM_Priority" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_DetailID" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_AttachID" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_CrBy" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_FileNo" Mode="In" Type="String" />
+      <Parameter Name="WTM_IsDisposed" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_DisposedBy" Mode="In" Type="Int32" />
+      <Parameter Name="WTM_Status" Mode="In" Type="String" />
+      <Parameter Name="WTM_PageIds" Mode="In" Type="String" />
+      <Parameter Name="iRetMasIDOut" Mode="InOut" Type="Int32" />
+      <Parameter Name="iRetOperation" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="Proc_IsValidUser_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="StudentUID" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="DateofBirth" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="Gender" Nullable="true" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ContactNumber" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Qualification" Nullable="true" />
+    <Property Type="Int32" Name="Occupation" Nullable="true" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="400" />
+    <Property Type="String" Name="Password" Nullable="true" />
+    <Property Type="Int32" Name="Role" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="true" />
+    <Property Type="Boolean" Name="IsEnabled" Nullable="false" />
+    <Property Type="String" Name="StreetAddress" Nullable="true" />
+    <Property Type="String" Name="CityAddress" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="PROC_Menu_Select_Result">
+    <Property Type="Int32" Name="MenuIdentity" Nullable="false" />
+    <Property Type="String" Name="MenuID" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Parent_MenuID" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="User_Roll" Nullable="false" />
+    <Property Type="String" Name="MenuFileName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MenuURL" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="USE_YN" Nullable="true" MaxLength="1" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="PROC_MenubyUserRole_Select_Result">
+    <Property Type="Int32" Name="MenuIdentity" Nullable="false" />
+    <Property Type="String" Name="MenuID" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Parent_MenuID" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="User_Roll" Nullable="false" />
+    <Property Type="String" Name="MenuFileName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MenuURL" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="USE_YN" Nullable="true" MaxLength="1" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="PROC_UserRoles_Select_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Role" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Proc_WorkFLow_Get_ConditionalMailBox_Result">
+    <Property Type="Int32" Name="WTM_MasID" Nullable="false" />
+    <Property Type="Int32" Name="WTD_TransID" Nullable="true" />
+    <Property Type="String" Name="WTD_TransDate" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="WTD_SentOn" Nullable="true" />
+    <Property Type="Int32" Name="WTD_TransFrom" Nullable="true" />
+    <Property Type="String" Name="WTD_To" Nullable="true" />
+    <Property Type="String" Name="WTD_Remarks" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFStatsID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFActionID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_SentBy" Nullable="true" />
+    <Property Type="String" Name="WTD_WFStatus" Nullable="true" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="WTM_Subject" Nullable="true" />
+    <Property Type="Int32" Name="WTM_WorkFlowID" Nullable="true" />
+    <Property Type="Int32" Name="WTM_DOCID" Nullable="true" />
+    <Property Type="String" Name="WTM_ReadFlg" Nullable="true" />
+    <Property Type="String" Name="WTM_TrnStatus" Nullable="true" />
+    <Property Type="String" Name="WTM_FormCode" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Proc_WorkFLow_Get_ConditionalSentMail_Result">
+    <Property Type="Int32" Name="WTM_MasID" Nullable="false" />
+    <Property Type="Int32" Name="WTD_TransID" Nullable="true" />
+    <Property Type="DateTime" Name="WTD_TransDate" Nullable="true" />
+    <Property Type="Int32" Name="WTD_SentOn" Nullable="true" />
+    <Property Type="Int32" Name="WTD_TransFrom" Nullable="true" />
+    <Property Type="String" Name="WTD_To" Nullable="true" />
+    <Property Type="String" Name="WTD_Remarks" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFStatsID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFActionID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_SentBy" Nullable="true" />
+    <Property Type="String" Name="WTD_WFStatus" Nullable="true" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="WTM_Subject" Nullable="true" />
+    <Property Type="Int32" Name="WTM_WorkFlowID" Nullable="true" />
+    <Property Type="Int32" Name="WTM_DOCID" Nullable="true" />
+    <Property Type="String" Name="WTM_ReadFlg" Nullable="true" />
+    <Property Type="String" Name="WTM_TrnStatus" Nullable="true" />
+    <Property Type="String" Name="WTM_FormCode" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Proc_WorkFLow_Get_MailBox_Result">
+    <Property Type="Int32" Name="WTM_MasID" Nullable="false" />
+    <Property Type="Int32" Name="WTD_TransID" Nullable="true" />
+    <Property Type="String" Name="WTD_TransDate" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="WTD_SentOn" Nullable="true" />
+    <Property Type="Int32" Name="WTD_TransFrom" Nullable="true" />
+    <Property Type="String" Name="WTD_To" Nullable="true" />
+    <Property Type="String" Name="WTD_Remarks" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFStatsID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFActionID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_SentBy" Nullable="true" />
+    <Property Type="String" Name="WTD_WFStatus" Nullable="true" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="WTM_Subject" Nullable="true" />
+    <Property Type="Int32" Name="WTM_WorkFlowID" Nullable="true" />
+    <Property Type="Int32" Name="WTM_DOCID" Nullable="true" />
+    <Property Type="String" Name="WTM_ReadFlg" Nullable="true" />
+    <Property Type="String" Name="WTM_TrnStatus" Nullable="true" />
+    <Property Type="String" Name="WTM_FormCode" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Proc_WorkFLow_Get_SentMail_Result">
+    <Property Type="Int32" Name="WTM_MasID" Nullable="false" />
+    <Property Type="Int32" Name="WTD_TransID" Nullable="true" />
+    <Property Type="DateTime" Name="WTD_TransDate" Nullable="true" />
+    <Property Type="Int32" Name="WTD_SentOn" Nullable="true" />
+    <Property Type="Int32" Name="WTD_TransFrom" Nullable="true" />
+    <Property Type="String" Name="WTD_To" Nullable="true" />
+    <Property Type="String" Name="WTD_Remarks" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFStatsID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_WFActionID" Nullable="true" />
+    <Property Type="Int32" Name="WTD_SentBy" Nullable="true" />
+    <Property Type="String" Name="WTD_WFStatus" Nullable="true" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="WTM_Subject" Nullable="true" />
+    <Property Type="Int32" Name="WTM_WorkFlowID" Nullable="true" />
+    <Property Type="Int32" Name="WTM_DOCID" Nullable="true" />
+    <Property Type="String" Name="WTM_ReadFlg" Nullable="true" />
+    <Property Type="String" Name="WTM_TrnStatus" Nullable="true" />
+    <Property Type="String" Name="WTM_FormCode" Nullable="true" />
+  </ComplexType>
+</Schema>

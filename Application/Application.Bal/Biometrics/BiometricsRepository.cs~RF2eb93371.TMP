@@ -1,0 +1,25 @@
+﻿using Application.Dal.DataModel;
+using Application.Helpers.BiometricsHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Application.Bal.Biometrics
+{
+    public static class BiometricsRepository
+    {
+        static UserMgmtEntities1 db;
+        static BiometricsRepository()
+        {
+            db = new UserMgmtEntities1();
+        }
+
+        public static void saveBiometrics(A_U_Biometrics biometrics)
+        {            
+            db.A_U_Biometrics.Add(biometrics);
+            db.SaveChanges();
+        }
+    }
+}

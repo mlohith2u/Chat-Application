@@ -1,0 +1,125 @@
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\Application.Security.dll.config
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\Application.Security.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\Application.Security.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\Application.Dal.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\EntityFramework.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\Application.Dal.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\EntityFramework.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\obj\Debug\Application.Security.csprojResolveAssemblyReference.cache
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\obj\Debug\Application.Security.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Security\obj\Debug\Application.Security.pdb
+G:\Template\Application.Security\bin\Debug\Application.Security.dll.config
+G:\Template\Application.Security\bin\Debug\Application.Security.dll
+G:\Template\Application.Security\bin\Debug\Application.Security.pdb
+G:\Template\Application.Security\bin\Debug\Application.Dal.dll
+G:\Template\Application.Security\bin\Debug\EntityFramework.dll
+G:\Template\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+G:\Template\Application.Security\bin\Debug\Application.Dal.pdb
+G:\Template\Application.Security\bin\Debug\Application.Dal.dll.config
+G:\Template\Application.Security\bin\Debug\EntityFramework.xml
+G:\Template\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+G:\Template\Application.Security\obj\Debug\Application.Security.csprojResolveAssemblyReference.cache
+G:\Template\Application.Security\obj\Debug\Application.Security.csproj.CoreCompileInputs.cache
+G:\Template\Application.Security\obj\Debug\Application.Security.dll
+G:\Template\Application.Security\obj\Debug\Application.Security.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Security.dll.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Security.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Security.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Dal.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Dal.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Dal.dll.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.csprojResolveAssemblyReference.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.csproj.CoreCompileInputs.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Security.dll.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Security.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Security.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Dal.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Dal.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\Application.Dal.dll.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.csprojResolveAssemblyReference.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.csproj.CoreCompileInputs.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Security\obj\Debug\Application.Security.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Application.Security.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Application.Security.dll
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Application.Security.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Application.Dal.dll
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\EntityFramework.dll
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.dll
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Application.Dal.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Application.Dal.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\EntityFramework.xml
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+E:\Audit(6-10-18)\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.xml
+E:\Audit(6-10-18)\UserManagement\Application.Security\obj\Debug\Application.Security.csprojAssemblyReference.cache
+E:\Audit(6-10-18)\UserManagement\Application.Security\obj\Debug\Application.Security.csproj.CoreCompileInputs.cache
+E:\Audit(6-10-18)\UserManagement\Application.Security\obj\Debug\Application.Security.csproj.CopyComplete
+E:\Audit(6-10-18)\UserManagement\Application.Security\obj\Debug\Application.Security.dll
+E:\Audit(6-10-18)\UserManagement\Application.Security\obj\Debug\Application.Security.pdb
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Application.Security.dll.config
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Application.Security.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Application.Security.pdb
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Application.Dal.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\EntityFramework.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Application.Dal.pdb
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Application.Dal.dll.config
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\EntityFramework.xml
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+F:\Malleswari\Local CWP\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.xml
+F:\Malleswari\Local CWP\UserManagement\Application.Security\obj\Debug\Application.Security.csprojAssemblyReference.cache
+F:\Malleswari\Local CWP\UserManagement\Application.Security\obj\Debug\Application.Security.csproj.CopyComplete
+F:\Malleswari\Local CWP\UserManagement\Application.Security\obj\Debug\Application.Security.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Security\obj\Debug\Application.Security.pdb
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Security.dll.config
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Security.dll
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Security.pdb
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Bal.dll
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Dal.dll
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.dll
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.dll
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Bal.pdb
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Bal.dll.config
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Dal.pdb
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Dal.dll.config
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.xml
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+E:\Full Chat\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.xml
+E:\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.csprojAssemblyReference.cache
+E:\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.csproj.CopyComplete
+E:\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.dll
+E:\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.pdb
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Security.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Security.dll
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Security.pdb
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Bal.dll
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Dal.dll
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.dll
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.dll
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.dll
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Bal.pdb
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Bal.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Dal.pdb
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Application.Dal.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.xml
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\EntityFramework.SqlServer.xml
+D:\Temp\Full Chat\UserManagement\Application.Security\bin\Debug\Newtonsoft.Json.xml
+D:\Temp\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.csprojAssemblyReference.cache
+D:\Temp\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.csproj.CopyComplete
+D:\Temp\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.dll
+D:\Temp\Full Chat\UserManagement\Application.Security\obj\Debug\Application.Security.pdb

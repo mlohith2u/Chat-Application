@@ -1,0 +1,43 @@
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Helpers\bin\Debug\Application.Helpers.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Helpers\bin\Debug\Application.Helpers.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Helpers\obj\Debug\Application.Helpers.csprojResolveAssemblyReference.cache
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Helpers\obj\Debug\Application.Helpers.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Helpers\obj\Debug\Application.Helpers.pdb
+G:\Template\Application.Helpers\bin\Debug\Application.Helpers.dll
+G:\Template\Application.Helpers\bin\Debug\Application.Helpers.pdb
+G:\Template\Application.Helpers\obj\Debug\Application.Helpers.csprojResolveAssemblyReference.cache
+G:\Template\Application.Helpers\obj\Debug\Application.Helpers.csproj.CoreCompileInputs.cache
+G:\Template\Application.Helpers\obj\Debug\Application.Helpers.dll
+G:\Template\Application.Helpers\obj\Debug\Application.Helpers.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csprojResolveAssemblyReference.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csproj.CoreCompileInputs.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csprojResolveAssemblyReference.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csproj.CoreCompileInputs.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.dll
+E:\Audit(6-10-18)\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csprojAssemblyReference.cache
+E:\Audit(6-10-18)\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csproj.CoreCompileInputs.cache
+E:\Audit(6-10-18)\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.dll
+E:\Audit(6-10-18)\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.pdb
+F:\Malleswari\Local CWP\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.pdb
+F:\Malleswari\Local CWP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csprojAssemblyReference.cache
+F:\Malleswari\Local CWP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.dll
+F:\Malleswari\Local CWP\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.pdb
+E:\Full Chat\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.dll
+E:\Full Chat\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.pdb
+E:\Full Chat\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.dll
+E:\Full Chat\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.pdb
+D:\Temp\Full Chat\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.dll
+D:\Temp\Full Chat\UserManagement\Application.Helpers\bin\Debug\Application.Helpers.pdb
+D:\Temp\Full Chat\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.csprojAssemblyReference.cache
+D:\Temp\Full Chat\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.dll
+D:\Temp\Full Chat\UserManagement\Application.Helpers\obj\Debug\Application.Helpers.pdb

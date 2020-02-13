@@ -1,0 +1,111 @@
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\Application.Bal.dll.config
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\Application.Bal.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\Application.Bal.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\Application.Dal.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\Application.Helpers.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\EntityFramework.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\EntityFramework.SqlServer.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\Application.Dal.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\Application.Helpers.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\EntityFramework.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\bin\Debug\EntityFramework.SqlServer.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\obj\Debug\Application.Bal.csprojResolveAssemblyReference.cache
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\obj\Debug\Application.Bal.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Bal\obj\Debug\Application.Bal.pdb
+G:\Template\Application.Bal\bin\Debug\Application.Bal.dll.config
+G:\Template\Application.Bal\bin\Debug\Application.Bal.dll
+G:\Template\Application.Bal\bin\Debug\Application.Bal.pdb
+G:\Template\Application.Bal\bin\Debug\Application.Dal.dll
+G:\Template\Application.Bal\bin\Debug\Application.Helpers.dll
+G:\Template\Application.Bal\bin\Debug\EntityFramework.dll
+G:\Template\Application.Bal\bin\Debug\EntityFramework.SqlServer.dll
+G:\Template\Application.Bal\bin\Debug\Application.Dal.pdb
+G:\Template\Application.Bal\bin\Debug\Application.Dal.dll.config
+G:\Template\Application.Bal\bin\Debug\Application.Helpers.pdb
+G:\Template\Application.Bal\bin\Debug\EntityFramework.xml
+G:\Template\Application.Bal\bin\Debug\EntityFramework.SqlServer.xml
+G:\Template\Application.Bal\obj\Debug\Application.Bal.csprojResolveAssemblyReference.cache
+G:\Template\Application.Bal\obj\Debug\Application.Bal.csproj.CoreCompileInputs.cache
+G:\Template\Application.Bal\obj\Debug\Application.Bal.dll
+G:\Template\Application.Bal\obj\Debug\Application.Bal.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Bal.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Helpers.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Dal.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Helpers.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.csprojResolveAssemblyReference.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.csproj.CoreCompileInputs.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Bal.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Helpers.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Dal.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\Application.Helpers.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.csprojResolveAssemblyReference.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.csproj.CoreCompileInputs.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Bal\obj\Debug\Application.Bal.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Bal.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Helpers.dll
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\EntityFramework.dll
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Dal.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\Application.Helpers.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\EntityFramework.xml
+E:\Audit(6-10-18)\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Audit(6-10-18)\UserManagement\Application.Bal\obj\Debug\Application.Bal.csprojAssemblyReference.cache
+E:\Audit(6-10-18)\UserManagement\Application.Bal\obj\Debug\Application.Bal.csproj.CoreCompileInputs.cache
+E:\Audit(6-10-18)\UserManagement\Application.Bal\obj\Debug\Application.Bal.csproj.CopyComplete
+E:\Audit(6-10-18)\UserManagement\Application.Bal\obj\Debug\Application.Bal.dll
+E:\Audit(6-10-18)\UserManagement\Application.Bal\obj\Debug\Application.Bal.pdb
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll.config
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Bal.pdb
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Helpers.dll
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.dll
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Dal.pdb
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll.config
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Helpers.pdb
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.xml
+E:\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.csprojAssemblyReference.cache
+E:\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.csproj.CopyComplete
+E:\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.dll
+E:\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.pdb
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Bal.dll
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Bal.pdb
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Helpers.dll
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.dll
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Dal.pdb
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Dal.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\Application.Helpers.pdb
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.xml
+D:\Temp\Full Chat\UserManagement\Application.Bal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Temp\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.csprojAssemblyReference.cache
+D:\Temp\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.csproj.CopyComplete
+D:\Temp\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.dll
+D:\Temp\Full Chat\UserManagement\Application.Bal\obj\Debug\Application.Bal.pdb

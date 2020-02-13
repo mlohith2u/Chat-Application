@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChatAppModelStoreContainer" CdmEntityContainer="ChatAppEntities">
+    <EntitySetMapping Name="A_U_Management">
+      <EntityTypeMapping TypeName="ChatAppModel.A_U_Management">
+        <MappingFragment StoreEntitySet="A_U_Management">
+          <ScalarProperty Name="UserUID" ColumnName="UserUID" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_U_MenuMaster">
+      <EntityTypeMapping TypeName="ChatAppModel.A_U_MenuMaster">
+        <MappingFragment StoreEntitySet="A_U_MenuMaster">
+          <ScalarProperty Name="MenuIdentity" ColumnName="MenuIdentity" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="Parent_MenuID" ColumnName="Parent_MenuID" />
+          <ScalarProperty Name="User_Roll" ColumnName="User_Roll" />
+          <ScalarProperty Name="MenuFileName" ColumnName="MenuFileName" />
+          <ScalarProperty Name="MenuURL" ColumnName="MenuURL" />
+          <ScalarProperty Name="USE_YN" ColumnName="USE_YN" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_U_Token">
+      <EntityTypeMapping TypeName="ChatAppModel.A_U_Token">
+        <MappingFragment StoreEntitySet="A_U_Token">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="IssuedUTC" ColumnName="IssuedUTC" />
+          <ScalarProperty Name="ExpireUTC" ColumnName="ExpireUTC" />
+          <ScalarProperty Name="ProtectedTicket" ColumnName="ProtectedTicket" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_WorkflowFormMaster">
+      <EntityTypeMapping TypeName="ChatAppModel.A_WorkflowFormMaster">
+        <MappingFragment StoreEntitySet="A_WorkflowFormMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FM_PKID" ColumnName="FM_PKID" />
+          <ScalarProperty Name="FM_FormCode" ColumnName="FM_FormCode" />
+          <ScalarProperty Name="FM_FormName" ColumnName="FM_FormName" />
+          <ScalarProperty Name="FM_WorkflowTime" ColumnName="FM_WorkflowTime" />
+          <ScalarProperty Name="FM_FormPath" ColumnName="FM_FormPath" />
+          <ScalarProperty Name="FM_Notes" ColumnName="FM_Notes" />
+          <ScalarProperty Name="FM_Crby" ColumnName="FM_Crby" />
+          <ScalarProperty Name="FM_CrOn" ColumnName="FM_CrOn" />
+          <ScalarProperty Name="FM_Status" ColumnName="FM_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_WorkflowTransDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.A_WorkflowTransDetails">
+        <MappingFragment StoreEntitySet="A_WorkflowTransDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WTM_MasID" ColumnName="WTM_MasID" />
+          <ScalarProperty Name="WTD_TransID" ColumnName="WTD_TransID" />
+          <ScalarProperty Name="WTD_InwardFileNo" ColumnName="WTD_InwardFileNo" />
+          <ScalarProperty Name="WTD_TransDate" ColumnName="WTD_TransDate" />
+          <ScalarProperty Name="WTD_TransFrom" ColumnName="WTD_TransFrom" />
+          <ScalarProperty Name="WTD_To" ColumnName="WTD_To" />
+          <ScalarProperty Name="WTD_Remarks" ColumnName="WTD_Remarks" />
+          <ScalarProperty Name="WTD_WFStatsID" ColumnName="WTD_WFStatsID" />
+          <ScalarProperty Name="WTD_WFActionID" ColumnName="WTD_WFActionID" />
+          <ScalarProperty Name="WTD_SentBy" ColumnName="WTD_SentBy" />
+          <ScalarProperty Name="WTD_WFStatus" ColumnName="WTD_WFStatus" />
+          <ScalarProperty Name="WTD_SentOn" ColumnName="WTD_SentOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_WorkflowTransMailBoxes">
+      <EntityTypeMapping TypeName="ChatAppModel.A_WorkflowTransMailBoxes">
+        <MappingFragment StoreEntitySet="A_WorkflowTransMailBoxes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WTM_MasID" ColumnName="WTM_MasID" />
+          <ScalarProperty Name="WTM_TransID" ColumnName="WTM_TransID" />
+          <ScalarProperty Name="WTM_InwardFileNo" ColumnName="WTM_InwardFileNo" />
+          <ScalarProperty Name="WTM_TrnFrom" ColumnName="WTM_TrnFrom" />
+          <ScalarProperty Name="WTM_TrnTo" ColumnName="WTM_TrnTo" />
+          <ScalarProperty Name="WTM_UsrOrGrp" ColumnName="WTM_UsrOrGrp" />
+          <ScalarProperty Name="WTM_ReadFlg" ColumnName="WTM_ReadFlg" />
+          <ScalarProperty Name="WTM_TrnStatus" ColumnName="WTM_TrnStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_WorkflowTransMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.A_WorkflowTransMasters">
+        <MappingFragment StoreEntitySet="A_WorkflowTransMasters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WTM_MasID" ColumnName="WTM_MasID" />
+          <ScalarProperty Name="WTM_WorkFlowID" ColumnName="WTM_WorkFlowID" />
+          <ScalarProperty Name="WTM_DOCID" ColumnName="WTM_DOCID" />
+          <ScalarProperty Name="WTM_FormCode" ColumnName="WTM_FormCode" />
+          <ScalarProperty Name="WTM_Subject" ColumnName="WTM_Subject" />
+          <ScalarProperty Name="WTM_AttachID" ColumnName="WTM_AttachID" />
+          <ScalarProperty Name="WTM_CrBy" ColumnName="WTM_CrBy" />
+          <ScalarProperty Name="WTM_IsDisposed" ColumnName="WTM_IsDisposed" />
+          <ScalarProperty Name="WTM_DisposedBy" ColumnName="WTM_DisposedBy" />
+          <ScalarProperty Name="WTM_WFProcessID" ColumnName="WTM_WFProcessID" />
+          <ScalarProperty Name="WTM_Status" ColumnName="WTM_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChatConversations">
+      <EntityTypeMapping TypeName="ChatAppModel.ChatConversation">
+        <MappingFragment StoreEntitySet="ChatConversation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ConversationID" ColumnName="ConversationID" />
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="FromId" ColumnName="FromId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ToName" ColumnName="ToName" />
+          <ScalarProperty Name="ToId" ColumnName="ToId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChatMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.ChatMaster">
+        <MappingFragment StoreEntitySet="ChatMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="FromId" ColumnName="FromId" />
+          <ScalarProperty Name="ToName" ColumnName="ToName" />
+          <ScalarProperty Name="ToId" ColumnName="ToId" />
+          <ScalarProperty Name="IsOpened" ColumnName="IsOpened" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseImages">
+      <EntityTypeMapping TypeName="ChatAppModel.CourseImage">
+        <MappingFragment StoreEntitySet="CourseImages">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="CourseIcons" ColumnName="CourseIcons" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeLeaveDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.EmployeeLeaveDetail">
+        <MappingFragment StoreEntitySet="EmployeeLeaveDetails">
+          <ScalarProperty Name="EmployeeLeaveDetailsID" ColumnName="EmployeeLeaveDetailsID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="LeaveUpdatedDate" ColumnName="LeaveUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExaminationMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.ExaminationMaster">
+        <MappingFragment StoreEntitySet="ExaminationMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="ExaminationName" ColumnName="ExaminationName" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExternalLogins">
+      <EntityTypeMapping TypeName="ChatAppModel.ExternalLogin">
+        <MappingFragment StoreEntitySet="ExternalLogin">
+          <ScalarProperty Name="GID" ColumnName="GID" />
+          <ScalarProperty Name="Access_Token" ColumnName="Access Token" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Family_Name" ColumnName="Family Name" />
+          <ScalarProperty Name="Given_Name" ColumnName="Given Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FacultyImages">
+      <EntityTypeMapping TypeName="ChatAppModel.FacultyImage">
+        <MappingFragment StoreEntitySet="FacultyImage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserUID" ColumnName="UserUID" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Documents" ColumnName="Documents" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="FacultyID" ColumnName="FacultyID" />
+          <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FacultyMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.FacultyMaster">
+        <MappingFragment StoreEntitySet="FacultyMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserUID" ColumnName="UserUID" />
+          <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Skills" ColumnName="Skills" />
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="Interests" ColumnName="Interests" />
+          <ScalarProperty Name="ProfilePicture" ColumnName="ProfilePicture" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeedbackRatings">
+      <EntityTypeMapping TypeName="ChatAppModel.FeedbackRating">
+        <MappingFragment StoreEntitySet="FeedbackRating">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+          <ScalarProperty Name="SkillWiseRating" ColumnName="SkillWiseRating" />
+          <ScalarProperty Name="TeachnigRating" ColumnName="TeachnigRating" />
+          <ScalarProperty Name="ConductRating" ColumnName="ConductRating" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Leave_StatusMaster">
+      <EntityTypeMapping TypeName="ChatAppModel.Leave_StatusMaster">
+        <MappingFragment StoreEntitySet="Leave_StatusMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LeaveStatusName" ColumnName="LeaveStatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveHistoryMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.LeaveHistoryMaster">
+        <MappingFragment StoreEntitySet="LeaveHistoryMaster">
+          <ScalarProperty Name="LeaveHistoryMasterID" ColumnName="LeaveHistoryMasterID" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="TotalLeaveTaken" ColumnName="TotalLeaveTaken" />
+          <ScalarProperty Name="TotalLeaveRemaining" ColumnName="TotalLeaveRemaining" />
+          <ScalarProperty Name="LeaveStartingDate" ColumnName="LeaveStartingDate" />
+          <ScalarProperty Name="LeaveEndingDate" ColumnName="LeaveEndingDate" />
+          <ScalarProperty Name="LeaveMonthlyDetails" ColumnName="LeaveMonthlyDetails" />
+          <ScalarProperty Name="LeaveCount" ColumnName="LeaveCount" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="LeaveCredited" ColumnName="LeaveCredited" />
+          <ScalarProperty Name="LeaveDebited" ColumnName="LeaveDebited" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveLists">
+      <EntityTypeMapping TypeName="ChatAppModel.LeaveList">
+        <MappingFragment StoreEntitySet="LeaveList">
+          <ScalarProperty Name="LeaveConditionID" ColumnName="LeaveConditionID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="LeaveCredited" ColumnName="LeaveCredited" />
+          <ScalarProperty Name="LeaveDebited" ColumnName="LeaveDebited" />
+          <ScalarProperty Name="BalanceRemaining" ColumnName="BalanceRemaining" />
+          <ScalarProperty Name="BasicPayOnLeave" ColumnName="BasicPayOnLeave" />
+          <ScalarProperty Name="LeaveEncashed" ColumnName="LeaveEncashed" />
+          <ScalarProperty Name="LeaveStartingDate" ColumnName="LeaveStartingDate" />
+          <ScalarProperty Name="LeaveEndingDate" ColumnName="LeaveEndingDate" />
+          <ScalarProperty Name="AdvanceCredit" ColumnName="AdvanceCredit" />
+          <ScalarProperty Name="SalaryDeductionInPercentage" ColumnName="SalaryDeductionInPercentage" />
+          <ScalarProperty Name="SalaryDeductionInRupees" ColumnName="SalaryDeductionInRupees" />
+          <ScalarProperty Name="MinLeave" ColumnName="MinLeave" />
+          <ScalarProperty Name="MaxLeave" ColumnName="MaxLeave" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.LeaveMaster">
+        <MappingFragment StoreEntitySet="LeaveMaster">
+          <ScalarProperty Name="LeaveMasterID" ColumnName="LeaveMasterID" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveUpdateCountDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.LeaveUpdateCountDetail">
+        <MappingFragment StoreEntitySet="LeaveUpdateCountDetails">
+          <ScalarProperty Name="LeaveCountID" ColumnName="LeaveCountID" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="LeaveUpdatedDate" ColumnName="LeaveUpdatedDate" />
+          <ScalarProperty Name="NoOfDays" ColumnName="NoOfDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="messages">
+      <EntityTypeMapping TypeName="ChatAppModel.message">
+        <MappingFragment StoreEntitySet="message">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Policytables">
+      <EntityTypeMapping TypeName="ChatAppModel.Policytable">
+        <MappingFragment StoreEntitySet="Policytable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PolicyType" ColumnName="PolicyType" />
+          <ScalarProperty Name="Documents" ColumnName="Documents" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocumentSize" ColumnName="DocumentSize" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SessionDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.SessionDetail">
+        <MappingFragment StoreEntitySet="SessionDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LoggedIn" ColumnName="LoggedIn" />
+          <ScalarProperty Name="LoggedInTime" ColumnName="LoggedInTime" />
+          <ScalarProperty Name="LoggedOutTime" ColumnName="LoggedOutTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentChapters">
+      <EntityTypeMapping TypeName="ChatAppModel.StudentChapter">
+        <MappingFragment StoreEntitySet="StudentChapters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+          <ScalarProperty Name="Level1" ColumnName="Level1" />
+          <ScalarProperty Name="Level2" ColumnName="Level2" />
+          <ScalarProperty Name="Level3" ColumnName="Level3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentDocumentDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.StudentDocumentDetail">
+        <MappingFragment StoreEntitySet="StudentDocumentDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FolderId" ColumnName="FolderId" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="Documents" ColumnName="Documents" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocumentSize" ColumnName="DocumentSize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentFilePlanDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.StudentFilePlanDetail">
+        <MappingFragment StoreEntitySet="StudentFilePlanDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentFolderDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.StudentFolderDetail">
+        <MappingFragment StoreEntitySet="StudentFolderDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentImages">
+      <EntityTypeMapping TypeName="ChatAppModel.StudentImage">
+        <MappingFragment StoreEntitySet="StudentImage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentUID" ColumnName="StudentUID" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Documents" ColumnName="Documents" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentsTests">
+      <EntityTypeMapping TypeName="ChatAppModel.StudentsTest">
+        <MappingFragment StoreEntitySet="StudentsTests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="ChapterId" ColumnName="ChapterId" />
+          <ScalarProperty Name="MarksObtained" ColumnName="MarksObtained" />
+          <ScalarProperty Name="GradeObtained" ColumnName="GradeObtained" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="DomainId" ColumnName="DomainId" />
+          <ScalarProperty Name="TechnologyId" ColumnName="TechnologyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentTests">
+      <EntityTypeMapping TypeName="ChatAppModel.StudentTest">
+        <MappingFragment StoreEntitySet="StudentTests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="MarksObtained" ColumnName="MarksObtained" />
+          <ScalarProperty Name="GradeObtained" ColumnName="GradeObtained" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudetTestPaperResults">
+      <EntityTypeMapping TypeName="ChatAppModel.StudetTestPaperResult">
+        <MappingFragment StoreEntitySet="StudetTestPaperResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TestPaperId" ColumnName="TestPaperId" />
+          <ScalarProperty Name="TestPaperName" ColumnName="TestPaperName" />
+          <ScalarProperty Name="MarksObtained" ColumnName="MarksObtained" />
+          <ScalarProperty Name="GradeObtained" ColumnName="GradeObtained" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCartDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.tblCartDetail">
+        <MappingFragment StoreEntitySet="tblCartDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Student_Id" ColumnName="Student_Id" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChapterMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblChapterMaster">
+        <MappingFragment StoreEntitySet="tblChapterMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ChapterName" ColumnName="ChapterName" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCourseMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblCourseMaster">
+        <MappingFragment StoreEntitySet="tblCourseMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDomainMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblDomainMaster">
+        <MappingFragment StoreEntitySet="tblDomainMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDurationMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblDurationMaster">
+        <MappingFragment StoreEntitySet="tblDurationMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEnrollDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.tblEnrollDetail">
+        <MappingFragment StoreEntitySet="tblEnrollDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USNNumber" ColumnName="USNNumber" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+          <ScalarProperty Name="StartedOn" ColumnName="StartedOn" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGenderMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblGenderMaster">
+        <MappingFragment StoreEntitySet="tblGenderMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLevelMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblLevelMaster">
+        <MappingFragment StoreEntitySet="tblLevelMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LevelName" ColumnName="LevelName" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOccupationMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblOccupationMaster">
+        <MappingFragment StoreEntitySet="tblOccupationMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblOptionMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblOptionMaster">
+        <MappingFragment StoreEntitySet="tblOptionMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="Option" ColumnName="Option" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPresentationMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblPresentationMaster">
+        <MappingFragment StoreEntitySet="tblPresentationMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PresentationName" ColumnName="PresentationName" />
+          <ScalarProperty Name="PresentationMode" ColumnName="PresentationMode" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Chapter" ColumnName="Chapter" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPriceMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblPriceMaster">
+        <MappingFragment StoreEntitySet="tblPriceMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="DurationId" ColumnName="DurationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQualificationMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblQualificationMaster">
+        <MappingFragment StoreEntitySet="tblQualificationMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQuestionBankMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblQuestionBankMaster">
+        <MappingFragment StoreEntitySet="tblQuestionBankMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="QuestionBankName" ColumnName="QuestionBankName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQuestionbankQuestions">
+      <EntityTypeMapping TypeName="ChatAppModel.tblQuestionbankQuestion">
+        <MappingFragment StoreEntitySet="tblQuestionbankQuestions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QuestionbankId" ColumnName="QuestionbankId" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="ChapterId" ColumnName="ChapterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQuestionMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblQuestionMaster">
+        <MappingFragment StoreEntitySet="tblQuestionMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Chapter" ColumnName="Chapter" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="ExamLevel" ColumnName="ExamLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRoleMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblRoleMaster">
+        <MappingFragment StoreEntitySet="tblRoleMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStudentCourses">
+      <EntityTypeMapping TypeName="ChatAppModel.tblStudentCours">
+        <MappingFragment StoreEntitySet="tblStudentCourses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="CompletionStatus" ColumnName="CompletionStatus" />
+          <ScalarProperty Name="StartedOn" ColumnName="StartedOn" />
+          <ScalarProperty Name="CompletedOn" ColumnName="CompletedOn" />
+          <ScalarProperty Name="TechnologyId" ColumnName="TechnologyId" />
+          <ScalarProperty Name="DomainId" ColumnName="DomainId" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStudentDetails">
+      <EntityTypeMapping TypeName="ChatAppModel.tblStudentDetail">
+        <MappingFragment StoreEntitySet="tblStudentDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentUID" ColumnName="StudentUID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="StreetAddress" ColumnName="StreetAddress" />
+          <ScalarProperty Name="CityAddress" ColumnName="CityAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblsubmitAnswers">
+      <EntityTypeMapping TypeName="ChatAppModel.tblsubmitAnswer">
+        <MappingFragment StoreEntitySet="tblsubmitAnswers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTechnologyMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblTechnologyMaster">
+        <MappingFragment StoreEntitySet="tblTechnologyMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TechnologyName" ColumnName="TechnologyName" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="Assignments" ColumnName="Assignments" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTestMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblTestMaster">
+        <MappingFragment StoreEntitySet="tblTestMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Chapter" ColumnName="Chapter" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="TotalScore" ColumnName="TotalScore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTestQuestionMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.tblTestQuestionMaster">
+        <MappingFragment StoreEntitySet="tblTestQuestionMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Technology" ColumnName="Technology" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Chapter" ColumnName="Chapter" />
+          <ScalarProperty Name="Test" ColumnName="Test" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestPapers">
+      <EntityTypeMapping TypeName="ChatAppModel.TestPaper">
+        <MappingFragment StoreEntitySet="TestPaper">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TestPaperId" ColumnName="TestPaperId" />
+          <ScalarProperty Name="TestPaperName" ColumnName="TestPaperName" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="DomainId" ColumnName="DomainId" />
+          <ScalarProperty Name="TechnologyId" ColumnName="TechnologyId" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="ChapterId" ColumnName="ChapterId" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsSaved" ColumnName="IsSaved" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestPaperNames">
+      <EntityTypeMapping TypeName="ChatAppModel.TestPaperName">
+        <MappingFragment StoreEntitySet="TestPaperNames">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TestPaperId" ColumnName="TestPaperId" />
+          <ScalarProperty Name="TPName" ColumnName="TPName" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tokens">
+      <EntityTypeMapping TypeName="ChatAppModel.Token">
+        <MappingFragment StoreEntitySet="Token">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="IssuedUTC" ColumnName="IssuedUTC" />
+          <ScalarProperty Name="ExpireUTC" ColumnName="ExpireUTC" />
+          <ScalarProperty Name="ProtectedTicket" ColumnName="ProtectedTicket" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionTables">
+      <EntityTypeMapping TypeName="ChatAppModel.TransactionTable">
+        <MappingFragment StoreEntitySet="TransactionTable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="TransactionStatus" ColumnName="TransactionStatus" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="Hash" ColumnName="Hash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UploadDocuments">
+      <EntityTypeMapping TypeName="ChatAppModel.UploadDocument">
+        <MappingFragment StoreEntitySet="UploadDocument">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="UploadType" ColumnName="UploadType" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocumentSize" ColumnName="DocumentSize" />
+          <ScalarProperty Name="Documents" ColumnName="Documents" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+          <ScalarProperty Name="UploadedOn" ColumnName="UploadedOn" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="ChapterID" ColumnName="ChapterID" />
+          <ScalarProperty Name="TechnologyID" ColumnName="TechnologyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAttendances">
+      <EntityTypeMapping TypeName="ChatAppModel.UserAttendance">
+        <MappingFragment StoreEntitySet="UserAttendance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Attendance" ColumnName="Attendance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserBiometrics">
+      <EntityTypeMapping TypeName="ChatAppModel.UserBiometric">
+        <MappingFragment StoreEntitySet="UserBiometric">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Finger" ColumnName="Finger" />
+          <ScalarProperty Name="Authentication" ColumnName="Authentication" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VA_Workflow_Leave_Master">
+      <EntityTypeMapping TypeName="ChatAppModel.VA_Workflow_Leave_Master">
+        <MappingFragment StoreEntitySet="VA_Workflow_Leave_Master">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MasID" ColumnName="MasID" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="LeaveApplicationNo" ColumnName="LeaveApplicationNo" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="LeaveTaken" ColumnName="LeaveTaken" />
+          <ScalarProperty Name="ClosingBalance" ColumnName="ClosingBalance" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="NoOfDays" ColumnName="NoOfDays" />
+          <ScalarProperty Name="LeaveAppliedDate" ColumnName="LeaveAppliedDate" />
+          <ScalarProperty Name="From_User" ColumnName="From_User" />
+          <ScalarProperty Name="To_User" ColumnName="To_User" />
+          <ScalarProperty Name="FormCode" ColumnName="FormCode" />
+          <ScalarProperty Name="LeaveSubject" ColumnName="LeaveSubject" />
+          <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+          <ScalarProperty Name="Trans_ID" ColumnName="Trans_ID" />
+          <ScalarProperty Name="Approvalone" ColumnName="Approvalone" />
+          <ScalarProperty Name="Approvaltwo" ColumnName="Approvaltwo" />
+          <ScalarProperty Name="Approvalthree" ColumnName="Approvalthree" />
+          <ScalarProperty Name="ApprovaloneDate" ColumnName="ApprovaloneDate" />
+          <ScalarProperty Name="ApprovaltwoDate" ColumnName="ApprovaltwoDate" />
+          <ScalarProperty Name="ApprovalthreeDate" ColumnName="ApprovalthreeDate" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="LeavePurpose" ColumnName="LeavePurpose" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workflow_Comment_HistoryTable">
+      <EntityTypeMapping TypeName="ChatAppModel.Workflow_Comment_HistoryTable">
+        <MappingFragment StoreEntitySet="Workflow_Comment_HistoryTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserUID" ColumnName="UserUID" />
+          <ScalarProperty Name="MailId" ColumnName="MailId" />
+          <ScalarProperty Name="WorkflowType" ColumnName="WorkflowType" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CommentedUser" ColumnName="CommentedUser" />
+          <ScalarProperty Name="ToUser" ColumnName="ToUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowStageMasters">
+      <EntityTypeMapping TypeName="ChatAppModel.WorkflowStageMaster">
+        <MappingFragment StoreEntitySet="WorkflowStageMaster">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WorkflowType" ColumnName="WorkflowType" />
+          <ScalarProperty Name="WorkflowStage" ColumnName="WorkflowStage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_U_Client">
+      <EntityTypeMapping TypeName="ChatAppModel.A_U_Client">
+        <MappingFragment StoreEntitySet="A_U_Client">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Secret" ColumnName="Secret" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ApplicationType" ColumnName="ApplicationType" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="RefreshTokenLifetime" ColumnName="RefreshTokenLifetime" />
+          <ScalarProperty Name="AllowedOrigin" ColumnName="AllowedOrigin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="A_U_FunctionMaster">
+      <EntityTypeMapping TypeName="ChatAppModel.A_U_FunctionMaster">
+        <MappingFragment StoreEntitySet="A_U_FunctionMaster">
+          <ScalarProperty Name="FunctionID" ColumnName="FunctionID" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamLevels">
+      <EntityTypeMapping TypeName="ChatAppModel.ExamLevel">
+        <MappingFragment StoreEntitySet="ExamLevels">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ExaminationLevel" ColumnName="ExaminationLevel" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="useractivities">
+      <EntityTypeMapping TypeName="ChatAppModel.useractivity">
+        <MappingFragment StoreEntitySet="useractivity">
+          <ScalarProperty Name="OnlineID" ColumnName="OnlineID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ConnectionID" ColumnName="ConnectionID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Proc_IsValidUser" FunctionName="ChatAppModel.Store.Proc_IsValidUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.Proc_IsValidUser_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StudentUID" ColumnName="StudentUID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="StreetAddress" ColumnName="StreetAddress" />
+          <ScalarProperty Name="CityAddress" ColumnName="CityAddress" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_MailBox_ChangeStatus" FunctionName="ChatAppModel.Store.Proc_MailBox_ChangeStatus" />
+    <FunctionImportMapping FunctionImportName="PROC_Menu_Delete" FunctionName="ChatAppModel.Store.PROC_Menu_Delete" />
+    <FunctionImportMapping FunctionImportName="PROC_Menu_Insert" FunctionName="ChatAppModel.Store.PROC_Menu_Insert" />
+    <FunctionImportMapping FunctionImportName="PROC_Menu_Select" FunctionName="ChatAppModel.Store.PROC_Menu_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.PROC_Menu_Select_Result">
+          <ScalarProperty Name="MenuIdentity" ColumnName="MenuIdentity" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="Parent_MenuID" ColumnName="Parent_MenuID" />
+          <ScalarProperty Name="User_Roll" ColumnName="User_Roll" />
+          <ScalarProperty Name="MenuFileName" ColumnName="MenuFileName" />
+          <ScalarProperty Name="MenuURL" ColumnName="MenuURL" />
+          <ScalarProperty Name="USE_YN" ColumnName="USE_YN" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PROC_Menu_Update" FunctionName="ChatAppModel.Store.PROC_Menu_Update" />
+    <FunctionImportMapping FunctionImportName="PROC_MenubyUserRole_Select" FunctionName="ChatAppModel.Store.PROC_MenubyUserRole_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.PROC_MenubyUserRole_Select_Result">
+          <ScalarProperty Name="MenuIdentity" ColumnName="MenuIdentity" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="Parent_MenuID" ColumnName="Parent_MenuID" />
+          <ScalarProperty Name="User_Roll" ColumnName="User_Roll" />
+          <ScalarProperty Name="MenuFileName" ColumnName="MenuFileName" />
+          <ScalarProperty Name="MenuURL" ColumnName="MenuURL" />
+          <ScalarProperty Name="USE_YN" ColumnName="USE_YN" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PROC_UserRoles_Select" FunctionName="ChatAppModel.Store.PROC_UserRoles_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.PROC_UserRoles_Select_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_WorkFLow_Get_ConditionalMailBox" FunctionName="ChatAppModel.Store.Proc_WorkFLow_Get_ConditionalMailBox">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.Proc_WorkFLow_Get_ConditionalMailBox_Result">
+          <ScalarProperty Name="WTM_MasID" ColumnName="WTM_MasID" />
+          <ScalarProperty Name="WTD_TransID" ColumnName="WTD_TransID" />
+          <ScalarProperty Name="WTD_TransDate" ColumnName="WTD_TransDate" />
+          <ScalarProperty Name="WTD_SentOn" ColumnName="WTD_SentOn" />
+          <ScalarProperty Name="WTD_TransFrom" ColumnName="WTD_TransFrom" />
+          <ScalarProperty Name="WTD_To" ColumnName="WTD_To" />
+          <ScalarProperty Name="WTD_Remarks" ColumnName="WTD_Remarks" />
+          <ScalarProperty Name="WTD_WFStatsID" ColumnName="WTD_WFStatsID" />
+          <ScalarProperty Name="WTD_WFActionID" ColumnName="WTD_WFActionID" />
+          <ScalarProperty Name="WTD_SentBy" ColumnName="WTD_SentBy" />
+          <ScalarProperty Name="WTD_WFStatus" ColumnName="WTD_WFStatus" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="WTM_Subject" ColumnName="WTM_Subject" />
+          <ScalarProperty Name="WTM_WorkFlowID" ColumnName="WTM_WorkFlowID" />
+          <ScalarProperty Name="WTM_DOCID" ColumnName="WTM_DOCID" />
+          <ScalarProperty Name="WTM_ReadFlg" ColumnName="WTM_ReadFlg" />
+          <ScalarProperty Name="WTM_TrnStatus" ColumnName="WTM_TrnStatus" />
+          <ScalarProperty Name="WTM_FormCode" ColumnName="WTM_FormCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_WorkFLow_Get_ConditionalSentMail" FunctionName="ChatAppModel.Store.Proc_WorkFLow_Get_ConditionalSentMail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.Proc_WorkFLow_Get_ConditionalSentMail_Result">
+          <ScalarProperty Name="WTM_MasID" ColumnName="WTM_MasID" />
+          <ScalarProperty Name="WTD_TransID" ColumnName="WTD_TransID" />
+          <ScalarProperty Name="WTD_TransDate" ColumnName="WTD_TransDate" />
+          <ScalarProperty Name="WTD_SentOn" ColumnName="WTD_SentOn" />
+          <ScalarProperty Name="WTD_TransFrom" ColumnName="WTD_TransFrom" />
+          <ScalarProperty Name="WTD_To" ColumnName="WTD_To" />
+          <ScalarProperty Name="WTD_Remarks" ColumnName="WTD_Remarks" />
+          <ScalarProperty Name="WTD_WFStatsID" ColumnName="WTD_WFStatsID" />
+          <ScalarProperty Name="WTD_WFActionID" ColumnName="WTD_WFActionID" />
+          <ScalarProperty Name="WTD_SentBy" ColumnName="WTD_SentBy" />
+          <ScalarProperty Name="WTD_WFStatus" ColumnName="WTD_WFStatus" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="WTM_Subject" ColumnName="WTM_Subject" />
+          <ScalarProperty Name="WTM_WorkFlowID" ColumnName="WTM_WorkFlowID" />
+          <ScalarProperty Name="WTM_DOCID" ColumnName="WTM_DOCID" />
+          <ScalarProperty Name="WTM_ReadFlg" ColumnName="WTM_ReadFlg" />
+          <ScalarProperty Name="WTM_TrnStatus" ColumnName="WTM_TrnStatus" />
+          <ScalarProperty Name="WTM_FormCode" ColumnName="WTM_FormCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_WorkFLow_Get_MailBox" FunctionName="ChatAppModel.Store.Proc_WorkFLow_Get_MailBox">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.Proc_WorkFLow_Get_MailBox_Result">
+          <ScalarProperty Name="WTM_MasID" ColumnName="WTM_MasID" />
+          <ScalarProperty Name="WTD_TransID" ColumnName="WTD_TransID" />
+          <ScalarProperty Name="WTD_TransDate" ColumnName="WTD_TransDate" />
+          <ScalarProperty Name="WTD_SentOn" ColumnName="WTD_SentOn" />
+          <ScalarProperty Name="WTD_TransFrom" ColumnName="WTD_TransFrom" />
+          <ScalarProperty Name="WTD_To" ColumnName="WTD_To" />
+          <ScalarProperty Name="WTD_Remarks" ColumnName="WTD_Remarks" />
+          <ScalarProperty Name="WTD_WFStatsID" ColumnName="WTD_WFStatsID" />
+          <ScalarProperty Name="WTD_WFActionID" ColumnName="WTD_WFActionID" />
+          <ScalarProperty Name="WTD_SentBy" ColumnName="WTD_SentBy" />
+          <ScalarProperty Name="WTD_WFStatus" ColumnName="WTD_WFStatus" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="WTM_Subject" ColumnName="WTM_Subject" />
+          <ScalarProperty Name="WTM_WorkFlowID" ColumnName="WTM_WorkFlowID" />
+          <ScalarProperty Name="WTM_DOCID" ColumnName="WTM_DOCID" />
+          <ScalarProperty Name="WTM_ReadFlg" ColumnName="WTM_ReadFlg" />
+          <ScalarProperty Name="WTM_TrnStatus" ColumnName="WTM_TrnStatus" />
+          <ScalarProperty Name="WTM_FormCode" ColumnName="WTM_FormCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_WorkFLow_Get_SentMail" FunctionName="ChatAppModel.Store.Proc_WorkFLow_Get_SentMail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ChatAppModel.Proc_WorkFLow_Get_SentMail_Result">
+          <ScalarProperty Name="WTM_MasID" ColumnName="WTM_MasID" />
+          <ScalarProperty Name="WTD_TransID" ColumnName="WTD_TransID" />
+          <ScalarProperty Name="WTD_TransDate" ColumnName="WTD_TransDate" />
+          <ScalarProperty Name="WTD_SentOn" ColumnName="WTD_SentOn" />
+          <ScalarProperty Name="WTD_TransFrom" ColumnName="WTD_TransFrom" />
+          <ScalarProperty Name="WTD_To" ColumnName="WTD_To" />
+          <ScalarProperty Name="WTD_Remarks" ColumnName="WTD_Remarks" />
+          <ScalarProperty Name="WTD_WFStatsID" ColumnName="WTD_WFStatsID" />
+          <ScalarProperty Name="WTD_WFActionID" ColumnName="WTD_WFActionID" />
+          <ScalarProperty Name="WTD_SentBy" ColumnName="WTD_SentBy" />
+          <ScalarProperty Name="WTD_WFStatus" ColumnName="WTD_WFStatus" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="WTM_Subject" ColumnName="WTM_Subject" />
+          <ScalarProperty Name="WTM_WorkFlowID" ColumnName="WTM_WorkFlowID" />
+          <ScalarProperty Name="WTM_DOCID" ColumnName="WTM_DOCID" />
+          <ScalarProperty Name="WTM_ReadFlg" ColumnName="WTM_ReadFlg" />
+          <ScalarProperty Name="WTM_TrnStatus" ColumnName="WTM_TrnStatus" />
+          <ScalarProperty Name="WTM_FormCode" ColumnName="WTM_FormCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_WorkFlow_Trans_Details_Save" FunctionName="ChatAppModel.Store.Proc_WorkFlow_Trans_Details_Save" />
+    <FunctionImportMapping FunctionImportName="Proc_WorkFlow_Trans_MailBox_Save" FunctionName="ChatAppModel.Store.Proc_WorkFlow_Trans_MailBox_Save" />
+    <FunctionImportMapping FunctionImportName="Proc_WorkFlow_Trans_Master_Save" FunctionName="ChatAppModel.Store.Proc_WorkFlow_Trans_Master_Save" />
+  </EntityContainerMapping>
+</Mapping>

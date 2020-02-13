@@ -1,0 +1,119 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.Description;
+using Application.Dal.DataModel;
+
+namespace Application.Api.App.modules.NewControllers
+{
+    public class QuestionnaireMastersController : ApiController
+    {
+        private UserMgmtEntities db = new UserMgmtEntities();
+
+        // GET: api/QuestionnaireMasters
+        public IQueryable<QuestionnaireMaster> GetQuestionnaireMasters()
+        {
+            return db.QuestionnaireMasters;
+        }
+
+        // GET: api/QuestionnaireMasters/5
+        [ResponseType(typeof(QuestionnaireMaster))]
+        public async Task<IHttpActionResult> GetQuestionnaireMaster(int id)
+        {
+            QuestionnaireMaster questionnaireMaster = await db.QuestionnaireMasters.FindAsync(id);
+            if (questionnaireMaster == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(questionnaireMaster);
+        }
+
+        // PUT: api/QuestionnaireMasters/5
+        [ResponseType(typeof(void))]
+        public async Task<IHttpActionResult> PutQuestionnaireMaster(int id, QuestionnaireMaster questionnaireMaster)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (id != questionnaireMaster.ID)
+            {
+                return BadRequest();
+            }
+
+            db.Entry(questionnaireMaster).State = EntityState.Modified;
+
+            try
+            {
+                await db.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!QuestionnaireMasterExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return StatusCode(HttpStatusCode.NoContent);
+        }
+
+        // POST: api/QuestionnaireMasters
+        [ResponseType(typeof(QuestionnaireMaster))]
+        public async Task<IHttpActionResult> PostQuestionnaireMaster(QuestionnaireMaster questionnaireMaster)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            db.QuestionnaireMasters.Add(questionnaireMaster);
+            await db.SaveChangesAsync();
+
+            return CreatedAtRoute("DefaultApi", new { id = questionnaireMaster.ID }, questionnaireMaster);
+        }
+
+        // DELETE: api/QuestionnaireMasters/5
+        [ResponseType(typeof(QuestionnaireMaster))]
+        public async Task<IHttpActionResult> DeleteQuestionnaireMaster(int id)
+        {
+            QuestionnaireMaster questionnaireMaster = await db.QuestionnaireMasters.FindAsync(id);
+            if (questionnaireMaster == null)
+            {
+                return NotFound();
+            }
+
+            db.QuestionnaireMasters.Remove(questionnaireMaster);
+            await db.SaveChangesAsync();
+
+            return Ok(questionnaireMaster);
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private bool QuestionnaireMasterExists(int id)
+        {
+            return db.QuestionnaireMasters.Count(e => e.ID == id) > 0;
+        }
+    }
+}

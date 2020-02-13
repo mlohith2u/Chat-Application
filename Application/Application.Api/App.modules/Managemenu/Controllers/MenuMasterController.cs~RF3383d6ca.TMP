@@ -1,0 +1,79 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.Description;
+using Application.Dal.DataModel;
+
+namespace Application.Api.App.modules.Managemenu.Controllers
+{
+    public class MenuMasterController : ApiController
+    {
+        private readonly UserMgmtEntities _db = new UserMgmtEntities();
+        // to Search Menu Details and display the result
+
+        [HttpGet]
+        public IEnumerable<PROC_Menu_Select_Result> GetMenuCrudSelect(string menuId, string menuName)
+        {
+            if (menuId == null)
+                menuId = "";
+            if (menuName == null)
+                menuName = "";
+            return _db.PROC_Menu_Select(menuId, menuName).AsEnumerable();
+        }
+        // To get all user role from ASPNETRoels Table
+        [HttpGet]
+        public IEnumerable<PROC_UserRoles_Select_Result> GetUserRoleDetails(string userRole)
+        {
+            if (userRole == null)
+                userRole = "";
+            return _db.PROC_UserRoles_Select(userRole).AsEnumerable();
+        }
+        [HttpGet]
+        public IQueryable<A_U_MenuMaster> GetA_U_MenuMaster()
+        {
+            return _db.A_U_MenuMaster;
+        }
+
+        [ResponseType(typeof(A_U_MenuMaster))]
+        public async Task<IHttpActionResult> GetOneMenu(int id)
+        {
+            A_U_MenuMaster menuMaster = await _db.A_U_MenuMaster.FindAsync(id);
+            if (menuMaster == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(menuMaster);
+          
+        }
+
+        [HttpGet]
+        public IEnumerable<PROC_MenubyUserRole_Select_Result> GetMenubyUserRole(string userRole)
+            {
+            if (userRole == null)
+                userRole = "";
+            return _db.PROC_MenubyUserRole_Select(userRole).AsEnumerable();
+        }
+        // To Insert new Menu Details
+        [HttpGet]
+        public IEnumerable<string> InsertMenu(string menuId, string menuName, string parentMenuId, int userRole, string menuFileName, string menuUrl, string useYn)
+        {
+            return _db.PROC_Menu_Insert(menuId, menuName, parentMenuId, userRole, menuFileName, menuUrl, useYn).AsEnumerable();
+        }
+        //to Update Menu Details  
+        [HttpGet]
+        public IEnumerable<string> UpdateMenu(int menuIdentity, string menuId, string menuName, string parentMenuId, int userRole, string menuFileName, string menuUrl, string useYn)
+        {
+           return  _db.PROC_Menu_Update(menuIdentity, menuId, menuName, parentMenuId, userRole, menuFileName, menuUrl, useYn).AsEnumerable(); 
+        }
+        //to Delete Menu Details  
+        [HttpGet]
+        public virtual string DeleteMenu(int menuIdentity)
+        {
+            _db.PROC_Menu_Delete(menuIdentity);
+            _db.SaveChanges();
+            return "deleted";
+        }
+    }
+}

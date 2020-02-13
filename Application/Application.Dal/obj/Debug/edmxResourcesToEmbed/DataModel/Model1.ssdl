@@ -1,0 +1,1107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChatAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ChatApp.dbo.A_U_Client' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="A_U_Client">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="450" Nullable="false" />
+    <Property Name="Secret" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar(max)" />
+    <Property Name="ApplicationType" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="RefreshTokenLifetime" Type="int" />
+    <Property Name="AllowedOrigin" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ChatApp.dbo.A_U_FunctionMaster' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="A_U_FunctionMaster">
+    <Key>
+      <PropertyRef Name="FunctionID" />
+    </Key>
+    <Property Name="FunctionID" Type="int" Nullable="false" />
+    <Property Name="FunctionName" Type="varchar" MaxLength="256" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="100" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="A_U_Management">
+    <Key>
+      <PropertyRef Name="UserUID" />
+    </Key>
+    <Property Name="UserUID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar(max)" />
+    <Property Name="ConfirmPassword" Type="varchar(max)" />
+    <Property Name="DateofBirth" Type="datetime" />
+    <Property Name="Qualification" Type="int" />
+    <Property Name="Occupation" Type="int" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserRole" Type="int" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="A_U_MenuMaster">
+    <Key>
+      <PropertyRef Name="MenuIdentity" />
+    </Key>
+    <Property Name="MenuIdentity" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MenuID" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="MenuName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Parent_MenuID" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="User_Roll" Type="int" Nullable="false" />
+    <Property Name="MenuFileName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="MenuURL" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="USE_YN" Type="char" MaxLength="1" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="A_U_Token">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="450" Nullable="false" />
+    <Property Name="Subject" Type="varchar(max)" />
+    <Property Name="ClientId" Type="varchar(max)" />
+    <Property Name="IssuedUTC" Type="datetime2" Precision="7" />
+    <Property Name="ExpireUTC" Type="datetime2" Precision="7" />
+    <Property Name="ProtectedTicket" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="A_WorkflowFormMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FM_PKID" Type="int" Nullable="false" />
+    <Property Name="FM_FormCode" Type="nvarchar(max)" />
+    <Property Name="FM_FormName" Type="nvarchar(max)" />
+    <Property Name="FM_WorkflowTime" Type="int" />
+    <Property Name="FM_FormPath" Type="nvarchar(max)" />
+    <Property Name="FM_Notes" Type="nvarchar(max)" />
+    <Property Name="FM_Crby" Type="int" />
+    <Property Name="FM_CrOn" Type="datetime2" Precision="7" />
+    <Property Name="FM_Status" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="A_WorkflowTransDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WTM_MasID" Type="int" Nullable="false" />
+    <Property Name="WTD_TransID" Type="int" />
+    <Property Name="WTD_InwardFileNo" Type="nvarchar(max)" />
+    <Property Name="WTD_TransDate" Type="datetime2" Precision="7" />
+    <Property Name="WTD_TransFrom" Type="int" />
+    <Property Name="WTD_To" Type="nvarchar(max)" />
+    <Property Name="WTD_Remarks" Type="nvarchar(max)" />
+    <Property Name="WTD_WFStatsID" Type="int" />
+    <Property Name="WTD_WFActionID" Type="int" />
+    <Property Name="WTD_SentBy" Type="int" />
+    <Property Name="WTD_WFStatus" Type="nvarchar(max)" />
+    <Property Name="WTD_SentOn" Type="int" />
+  </EntityType>
+  <EntityType Name="A_WorkflowTransMailBoxes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WTM_MasID" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="WTM_TransID" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WTM_InwardFileNo" Type="nvarchar(max)" />
+    <Property Name="WTM_TrnFrom" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WTM_TrnTo" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WTM_UsrOrGrp" Type="nvarchar(max)" />
+    <Property Name="WTM_ReadFlg" Type="nvarchar(max)" />
+    <Property Name="WTM_TrnStatus" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="A_WorkflowTransMasters">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WTM_MasID" Type="int" Nullable="false" />
+    <Property Name="WTM_WorkFlowID" Type="int" />
+    <Property Name="WTM_DOCID" Type="int" />
+    <Property Name="WTM_FormCode" Type="nvarchar(max)" />
+    <Property Name="WTM_Subject" Type="nvarchar(max)" />
+    <Property Name="WTM_AttachID" Type="int" />
+    <Property Name="WTM_CrBy" Type="int" />
+    <Property Name="WTM_IsDisposed" Type="int" />
+    <Property Name="WTM_DisposedBy" Type="int" />
+    <Property Name="WTM_WFProcessID" Type="int" />
+    <Property Name="WTM_Status" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ChatConversation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ConversationID" Type="nvarchar" MaxLength="50" />
+    <Property Name="FromName" Type="nvarchar" MaxLength="100" />
+    <Property Name="FromId" Type="nvarchar" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="ToName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ToId" Type="nchar" MaxLength="100" />
+    <Property Name="Type" Type="varchar" MaxLength="20" />
+    <Property Name="Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ChatMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="FromName" Type="nvarchar" MaxLength="100" />
+    <Property Name="FromId" Type="nvarchar" MaxLength="100" />
+    <Property Name="ToName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ToId" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsOpened" Type="bit" />
+  </EntityType>
+  <EntityType Name="CourseImages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CourseID" Type="int" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CourseIcons" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="EmployeeLeaveDetails">
+    <Key>
+      <PropertyRef Name="EmployeeLeaveDetailsID" />
+    </Key>
+    <Property Name="EmployeeLeaveDetailsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="nvarchar(max)" />
+    <Property Name="LeaveType" Type="int" />
+    <Property Name="OpeningBalance" Type="int" />
+    <Property Name="LeaveUpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ExaminationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="ExaminationName" Type="nvarchar(max)" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ChatApp.dbo.ExamLevels' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ExamLevels">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IsEnabled" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExaminationLevel" Type="nvarchar(max)" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExternalLogin">
+    <Key>
+      <PropertyRef Name="GID" />
+    </Key>
+    <Property Name="GID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Access Token" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Family Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Given Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FacultyImage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserUID" Type="varchar" MaxLength="50" />
+    <Property Name="DocumentName" Type="nvarchar(max)" />
+    <Property Name="DocumentType" Type="nvarchar(max)" />
+    <Property Name="Documents" Type="varbinary(max)" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="FacultyID" Type="varchar" MaxLength="50" />
+    <Property Name="FacultyName" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="FacultyMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserUID" Type="int" />
+    <Property Name="FacultyName" Type="varchar(max)" />
+    <Property Name="Qualification" Type="varchar(max)" />
+    <Property Name="DateOfBirth" Type="nchar" MaxLength="10" />
+    <Property Name="EmailId" Type="nvarchar(max)" />
+    <Property Name="ContactNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Experience" Type="nvarchar(max)" />
+    <Property Name="Skills" Type="nvarchar(max)" />
+    <Property Name="Languages" Type="nvarchar(max)" />
+    <Property Name="Interests" Type="nvarchar(max)" />
+    <Property Name="ProfilePicture" Type="varbinary(max)" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FeedbackRating">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FacultyName" Type="varchar(max)" />
+    <Property Name="SkillWiseRating" Type="int" />
+    <Property Name="TeachnigRating" Type="int" />
+    <Property Name="ConductRating" Type="int" />
+    <Property Name="IsEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="Leave_StatusMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveStatusName" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="LeaveHistoryMaster">
+    <Key>
+      <PropertyRef Name="LeaveHistoryMasterID" />
+    </Key>
+    <Property Name="LeaveHistoryMasterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveTypeID" Type="int" />
+    <Property Name="TotalLeaveTaken" Type="varchar" MaxLength="50" />
+    <Property Name="TotalLeaveRemaining" Type="varchar" MaxLength="50" />
+    <Property Name="LeaveStartingDate" Type="datetime" />
+    <Property Name="LeaveEndingDate" Type="datetime" />
+    <Property Name="LeaveMonthlyDetails" Type="varchar" MaxLength="50" />
+    <Property Name="LeaveCount" Type="varchar" MaxLength="50" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="LeaveCredited" Type="varchar" MaxLength="50" />
+    <Property Name="LeaveDebited" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LeaveList">
+    <Key>
+      <PropertyRef Name="LeaveConditionID" />
+    </Key>
+    <Property Name="LeaveConditionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="LeaveTypeID" Type="int" />
+    <Property Name="LeaveCredited" Type="varchar" MaxLength="50" />
+    <Property Name="LeaveDebited" Type="varchar" MaxLength="50" />
+    <Property Name="BalanceRemaining" Type="varchar" MaxLength="50" />
+    <Property Name="BasicPayOnLeave" Type="varchar" MaxLength="50" />
+    <Property Name="LeaveEncashed" Type="varchar" MaxLength="50" />
+    <Property Name="LeaveStartingDate" Type="datetime" />
+    <Property Name="LeaveEndingDate" Type="datetime" />
+    <Property Name="AdvanceCredit" Type="varchar" MaxLength="50" />
+    <Property Name="SalaryDeductionInPercentage" Type="varchar" MaxLength="50" />
+    <Property Name="SalaryDeductionInRupees" Type="varchar" MaxLength="50" />
+    <Property Name="MinLeave" Type="varchar" MaxLength="50" />
+    <Property Name="MaxLeave" Type="varchar" MaxLength="50" />
+    <Property Name="Reason" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LeaveMaster">
+    <Key>
+      <PropertyRef Name="LeaveMasterID" />
+    </Key>
+    <Property Name="LeaveMasterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveType" Type="varchar(max)" />
+    <Property Name="Days" Type="int" />
+  </EntityType>
+  <EntityType Name="LeaveUpdateCountDetails">
+    <Key>
+      <PropertyRef Name="LeaveCountID" />
+    </Key>
+    <Property Name="LeaveCountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveType" Type="int" />
+    <Property Name="LeaveUpdatedDate" Type="date" />
+    <Property Name="NoOfDays" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="message">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="Msg" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Policytable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PolicyType" Type="nvarchar(max)" />
+    <Property Name="Documents" Type="varbinary(max)" />
+    <Property Name="DocumentName" Type="varchar(max)" />
+    <Property Name="DocumentType" Type="varchar(max)" />
+    <Property Name="DocumentSize" Type="varchar(max)" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="SessionDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="50" />
+    <Property Name="LoggedIn" Type="bit" />
+    <Property Name="LoggedInTime" Type="datetime" />
+    <Property Name="LoggedOutTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="StudentChapters">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentID" Type="int" />
+    <Property Name="CourseID" Type="int" />
+    <Property Name="ChapterID" Type="int" />
+    <Property Name="Level1" Type="bit" />
+    <Property Name="Level2" Type="bit" />
+    <Property Name="Level3" Type="bit" />
+  </EntityType>
+  <EntityType Name="StudentDocumentDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="nvarchar" MaxLength="50" />
+    <Property Name="FileId" Type="int" />
+    <Property Name="FolderId" Type="int" />
+    <Property Name="DocumentName" Type="varchar(max)" />
+    <Property Name="Documents" Type="varbinary(max)" />
+    <Property Name="DocumentType" Type="nvarchar(max)" />
+    <Property Name="DocumentSize" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StudentFilePlanDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="varchar" MaxLength="50" />
+    <Property Name="FileName" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="StudentFolderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="nvarchar" MaxLength="50" />
+    <Property Name="FileId" Type="int" />
+    <Property Name="FolderName" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="StudentImage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentUID" Type="int" />
+    <Property Name="DocumentName" Type="nvarchar(max)" />
+    <Property Name="DocumentType" Type="nvarchar(max)" />
+    <Property Name="Documents" Type="varbinary(max)" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StudentsTests">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="int" />
+    <Property Name="CourseId" Type="int" />
+    <Property Name="ChapterId" Type="int" />
+    <Property Name="MarksObtained" Type="int" />
+    <Property Name="GradeObtained" Type="varchar" MaxLength="5" />
+    <Property Name="IsEnable" Type="bit" Nullable="false" />
+    <Property Name="Level" Type="varchar" MaxLength="50" />
+    <Property Name="DomainId" Type="int" />
+    <Property Name="TechnologyId" Type="int" />
+  </EntityType>
+  <EntityType Name="StudentTests">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="StudentId" Type="int" />
+    <Property Name="CourseId" Type="int" />
+    <Property Name="TestName" Type="varchar" MaxLength="50" />
+    <Property Name="MarksObtained" Type="int" />
+    <Property Name="GradeObtained" Type="varchar" MaxLength="5" />
+    <Property Name="IsEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="StudetTestPaperResult">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="TestPaperId" Type="nvarchar" MaxLength="15" />
+    <Property Name="TestPaperName" Type="varchar" MaxLength="50" />
+    <Property Name="MarksObtained" Type="int" />
+    <Property Name="GradeObtained" Type="varchar" MaxLength="5" />
+    <Property Name="IsEnable" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCartDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Student_Id" Type="int" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="Price" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tblChapterMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ChapterName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="Author" Type="varchar" MaxLength="200" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCourseMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CourseName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="Price" Type="int" />
+  </EntityType>
+  <EntityType Name="tblDomainMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DomainName" Type="varchar" MaxLength="100" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDurationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Duration" Type="nchar" MaxLength="100" />
+    <Property Name="IsEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblEnrollDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USNNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="StudentID" Type="int" />
+    <Property Name="IsPaid" Type="bit" Nullable="false" />
+    <Property Name="StartedOn" Type="datetime" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGenderMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblLevelMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LevelName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblOccupationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblOptionMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuestionId" Type="int" />
+    <Property Name="Option" Type="varchar(max)" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPresentationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PresentationName" Type="varchar" MaxLength="200" />
+    <Property Name="PresentationMode" Type="varchar" MaxLength="50" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="IsEnabled" Type="bit" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="Chapter" Type="int" />
+    <Property Name="Url" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="tblPriceMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Price" Type="nvarchar(max)" />
+    <Property Name="DurationId" Type="int" />
+  </EntityType>
+  <EntityType Name="tblQualificationMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Qualification" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblQuestionBankMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="QuestionBankName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Version" Type="varchar" MaxLength="50" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="Question" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tblQuestionbankQuestions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuestionbankId" Type="int" />
+    <Property Name="QuestionId" Type="int" />
+    <Property Name="Answer" Type="nvarchar(max)" />
+    <Property Name="IsEnabled" Type="bit" />
+    <Property Name="ChapterId" Type="int" />
+  </EntityType>
+  <EntityType Name="tblQuestionMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Question" Type="varchar(max)" />
+    <Property Name="Answer" Type="nvarchar(max)" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Chapter" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="LevelID" Type="int" Nullable="false" />
+    <Property Name="ExamLevel" Type="int" />
+  </EntityType>
+  <EntityType Name="tblRoleMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="50" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentCourses">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="nvarchar" MaxLength="50" />
+    <Property Name="CourseId" Type="int" />
+    <Property Name="CompletionStatus" Type="bit" Nullable="false" />
+    <Property Name="StartedOn" Type="datetime" />
+    <Property Name="CompletedOn" Type="datetime" />
+    <Property Name="TechnologyId" Type="int" />
+    <Property Name="DomainId" Type="int" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblStudentDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentUID" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullName" Type="varchar" MaxLength="200" />
+    <Property Name="DateofBirth" Type="datetime" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="ContactNumber" Type="varchar" MaxLength="50" />
+    <Property Name="Qualification" Type="int" />
+    <Property Name="Occupation" Type="int" />
+    <Property Name="Address" Type="nvarchar" MaxLength="400" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="Role" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="StreetAddress" Type="nvarchar(max)" />
+    <Property Name="CityAddress" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tblsubmitAnswers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Question" Type="nvarchar" MaxLength="100" />
+    <Property Name="Answer" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Score" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTechnologyMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TechnologyName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="Assignments" Type="int" />
+    <Property Name="Rating" Type="float" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="Images" Type="image" />
+  </EntityType>
+  <EntityType Name="tblTestMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestName" Type="varchar" MaxLength="50" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="Chapter" Type="int" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="TotalScore" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTestQuestionMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Domain" Type="int" />
+    <Property Name="Technology" Type="int" />
+    <Property Name="Course" Type="int" />
+    <Property Name="Chapter" Type="int" />
+    <Property Name="Test" Type="int" />
+    <Property Name="Question" Type="int" />
+    <Property Name="Answer" Type="int" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TestPaper">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestPaperId" Type="nvarchar" MaxLength="10" />
+    <Property Name="TestPaperName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="DomainId" Type="int" />
+    <Property Name="TechnologyId" Type="int" />
+    <Property Name="CourseId" Type="int" />
+    <Property Name="ChapterId" Type="int" />
+    <Property Name="QuestionId" Type="int" />
+    <Property Name="Question" Type="nvarchar(max)" />
+    <Property Name="Answer" Type="nvarchar(max)" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="IsSaved" Type="bit" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TestPaperNames">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestPaperId" Type="nvarchar" MaxLength="10" />
+    <Property Name="TPName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Standard" Type="nvarchar" MaxLength="25" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Token">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="450" Nullable="false" />
+    <Property Name="Subject" Type="varchar(max)" />
+    <Property Name="ClientId" Type="varchar(max)" />
+    <Property Name="IssuedUTC" Type="datetime2" Precision="7" />
+    <Property Name="ExpireUTC" Type="datetime2" Precision="7" />
+    <Property Name="ProtectedTicket" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TransactionTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Amount" Type="nvarchar(max)" />
+    <Property Name="TransactionId" Type="nvarchar(max)" />
+    <Property Name="TransactionStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="StudentId" Type="int" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="CourseId" Type="int" />
+    <Property Name="Hash" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="UploadDocument">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectID" Type="int" />
+    <Property Name="UploadType" Type="varchar" MaxLength="50" />
+    <Property Name="DocumentName" Type="varchar(max)" />
+    <Property Name="DocumentType" Type="varchar(max)" />
+    <Property Name="DocumentSize" Type="varchar(max)" />
+    <Property Name="Documents" Type="varbinary(max)" />
+    <Property Name="Comments" Type="varchar" MaxLength="150" />
+    <Property Name="UploadedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UploadedOn" Type="datetime2" Precision="7" />
+    <Property Name="CourseID" Type="int" />
+    <Property Name="ChapterID" Type="int" />
+    <Property Name="TechnologyID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ChatApp.dbo.useractivity' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="useractivity">
+    <Key>
+      <PropertyRef Name="OnlineID" />
+    </Key>
+    <Property Name="OnlineID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="ConnectionID" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="Avatar" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserAttendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Attendance" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserBiometric">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Finger" Type="varchar(max)" />
+    <Property Name="Authentication" Type="nvarchar(max)" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VA_Workflow_Leave_Master">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MasID" Type="int" Nullable="false" />
+    <Property Name="EmployeeId" Type="nvarchar(max)" />
+    <Property Name="EmployeeName" Type="nvarchar(max)" />
+    <Property Name="LeaveType" Type="int" />
+    <Property Name="LeaveApplicationNo" Type="nvarchar(max)" />
+    <Property Name="OpeningBalance" Type="int" />
+    <Property Name="FromDate" Type="nvarchar(max)" />
+    <Property Name="ToDate" Type="nvarchar(max)" />
+    <Property Name="LeaveTaken" Type="int" />
+    <Property Name="ClosingBalance" Type="int" />
+    <Property Name="StatusID" Type="int" />
+    <Property Name="NoOfDays" Type="int" />
+    <Property Name="LeaveAppliedDate" Type="datetime" />
+    <Property Name="From_User" Type="nvarchar(max)" />
+    <Property Name="To_User" Type="nvarchar(max)" />
+    <Property Name="FormCode" Type="nvarchar(max)" />
+    <Property Name="LeaveSubject" Type="nvarchar(max)" />
+    <Property Name="CreatedUser" Type="nvarchar(max)" />
+    <Property Name="Trans_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Approvalone" Type="bit" />
+    <Property Name="Approvaltwo" Type="bit" />
+    <Property Name="Approvalthree" Type="bit" />
+    <Property Name="ApprovaloneDate" Type="nvarchar(max)" />
+    <Property Name="ApprovaltwoDate" Type="nvarchar(max)" />
+    <Property Name="ApprovalthreeDate" Type="nvarchar(max)" />
+    <Property Name="LastUpdatedDate" Type="nvarchar(max)" />
+    <Property Name="LeavePurpose" Type="nvarchar(max)" />
+    <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Workflow_Comment_HistoryTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserUID" Type="int" />
+    <Property Name="MailId" Type="int" />
+    <Property Name="WorkflowType" Type="int" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="CommentedUser" Type="nvarchar(max)" />
+    <Property Name="ToUser" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="WorkflowStageMaster">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="WorkflowType" Type="nvarchar" MaxLength="50" />
+    <Property Name="WorkflowStage" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_LeaveHistoryMaster_LeaveMaster">
+    <End Role="LeaveMaster" Type="Self.LeaveMaster" Multiplicity="0..1" />
+    <End Role="LeaveHistoryMaster" Type="Self.LeaveHistoryMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LeaveMaster">
+        <PropertyRef Name="LeaveMasterID" />
+      </Principal>
+      <Dependent Role="LeaveHistoryMaster">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LeaveList_LeaveMaster">
+    <End Role="LeaveMaster" Type="Self.LeaveMaster" Multiplicity="0..1" />
+    <End Role="LeaveList" Type="Self.LeaveList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LeaveMaster">
+        <PropertyRef Name="LeaveMasterID" />
+      </Principal>
+      <Dependent Role="LeaveList">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Proc_IsValidUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_MailBox_ChangeStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WTM_MasID" Type="numeric" Mode="In" />
+    <Parameter Name="WTM_TransID" Type="numeric" Mode="In" />
+    <Parameter Name="WTM_TrnTo" Type="numeric" Mode="In" />
+    <Parameter Name="WTM_TrnStatus" Type="char" Mode="In" />
+    <Parameter Name="iRetOperation" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PROC_Menu_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuIdentity" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PROC_Menu_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuID" Type="varchar" Mode="In" />
+    <Parameter Name="MenuName" Type="varchar" Mode="In" />
+    <Parameter Name="Parent_MenuID" Type="varchar" Mode="In" />
+    <Parameter Name="User_Roll" Type="int" Mode="In" />
+    <Parameter Name="MenuFileName" Type="varchar" Mode="In" />
+    <Parameter Name="MenuURL" Type="varchar" Mode="In" />
+    <Parameter Name="USE_YN" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PROC_Menu_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuID" Type="varchar" Mode="In" />
+    <Parameter Name="MenuName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PROC_Menu_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MenuIdentity" Type="int" Mode="In" />
+    <Parameter Name="MenuID" Type="varchar" Mode="In" />
+    <Parameter Name="MenuName" Type="varchar" Mode="In" />
+    <Parameter Name="Parent_MenuID" Type="varchar" Mode="In" />
+    <Parameter Name="User_Roll" Type="int" Mode="In" />
+    <Parameter Name="MenuFileName" Type="varchar" Mode="In" />
+    <Parameter Name="MenuURL" Type="varchar" Mode="In" />
+    <Parameter Name="USE_YN" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PROC_MenubyUserRole_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Role" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PROC_UserRoles_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Role" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_WorkFLow_Get_ConditionalMailBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pintUserId" Type="int" Mode="In" />
+    <Parameter Name="pchrStatus" Type="char" Mode="In" />
+    <Parameter Name="fromdate" Type="varchar" Mode="In" />
+    <Parameter Name="todate" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_WorkFLow_Get_ConditionalSentMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pintUserId" Type="int" Mode="In" />
+    <Parameter Name="pchrStatus" Type="char" Mode="In" />
+    <Parameter Name="fromdate" Type="datetime" Mode="In" />
+    <Parameter Name="todate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="Proc_WorkFLow_Get_MailBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pintUserId" Type="int" Mode="In" />
+    <Parameter Name="pchrStatus" Type="char" Mode="In" />
+  </Function>
+  <Function Name="Proc_WorkFLow_Get_SentMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pintUserId" Type="int" Mode="In" />
+    <Parameter Name="pchrStatus" Type="char" Mode="In" />
+  </Function>
+  <Function Name="Proc_WorkFlow_Trans_Details_Save" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WTM_MasID" Type="int" Mode="In" />
+    <Parameter Name="WTD_TransID" Type="int" Mode="In" />
+    <Parameter Name="WTD_TransFrom" Type="int" Mode="In" />
+    <Parameter Name="WTD_To" Type="varchar" Mode="In" />
+    <Parameter Name="WTD_Remarks" Type="varchar" Mode="In" />
+    <Parameter Name="WTD_WFStatsID" Type="int" Mode="In" />
+    <Parameter Name="WTD_WFActionID" Type="int" Mode="In" />
+    <Parameter Name="WTD_SentBy" Type="int" Mode="In" />
+    <Parameter Name="iRetTransID" Type="int" Mode="InOut" />
+    <Parameter Name="iRetOperation" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="Proc_WorkFlow_Trans_MailBox_Save" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WTM_MasID" Type="numeric" Mode="In" />
+    <Parameter Name="WTM_TransID" Type="numeric" Mode="In" />
+    <Parameter Name="WTM_TrnFrom" Type="numeric" Mode="In" />
+    <Parameter Name="WTM_TrnTo" Type="numeric" Mode="In" />
+    <Parameter Name="WTM_UsrOrGrp" Type="char" Mode="In" />
+    <Parameter Name="WTM_ReadFlg" Type="char" Mode="In" />
+    <Parameter Name="WTM_TrnStatus" Type="char" Mode="In" />
+    <Parameter Name="iRetOperation" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="Proc_WorkFlow_Trans_Master_Save" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WTM_MasID" Type="int" Mode="In" />
+    <Parameter Name="WTM_WorkFlowID" Type="int" Mode="In" />
+    <Parameter Name="WTM_FormCode" Type="varchar" Mode="In" />
+    <Parameter Name="WTM_Subject" Type="varchar" Mode="In" />
+    <Parameter Name="WTM_Privacy" Type="varchar" Mode="In" />
+    <Parameter Name="WTM_Priority" Type="int" Mode="In" />
+    <Parameter Name="WTM_DetailID" Type="int" Mode="In" />
+    <Parameter Name="WTM_AttachID" Type="int" Mode="In" />
+    <Parameter Name="WTM_CrBy" Type="int" Mode="In" />
+    <Parameter Name="WTM_FileNo" Type="varchar" Mode="In" />
+    <Parameter Name="WTM_IsDisposed" Type="int" Mode="In" />
+    <Parameter Name="WTM_DisposedBy" Type="int" Mode="In" />
+    <Parameter Name="WTM_Status" Type="varchar" Mode="In" />
+    <Parameter Name="WTM_PageIds" Type="varchar" Mode="In" />
+    <Parameter Name="iRetMasIDOut" Type="int" Mode="InOut" />
+    <Parameter Name="iRetOperation" Type="int" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="ChatAppModelStoreContainer">
+    <EntitySet Name="A_U_Management" EntityType="Self.A_U_Management" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="A_U_MenuMaster" EntityType="Self.A_U_MenuMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="A_U_Token" EntityType="Self.A_U_Token" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="A_WorkflowFormMaster" EntityType="Self.A_WorkflowFormMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="A_WorkflowTransDetails" EntityType="Self.A_WorkflowTransDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="A_WorkflowTransMailBoxes" EntityType="Self.A_WorkflowTransMailBoxes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="A_WorkflowTransMasters" EntityType="Self.A_WorkflowTransMasters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChatConversation" EntityType="Self.ChatConversation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChatMaster" EntityType="Self.ChatMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CourseImages" EntityType="Self.CourseImages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeLeaveDetails" EntityType="Self.EmployeeLeaveDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExaminationMaster" EntityType="Self.ExaminationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExternalLogin" EntityType="Self.ExternalLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FacultyImage" EntityType="Self.FacultyImage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FacultyMaster" EntityType="Self.FacultyMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeedbackRating" EntityType="Self.FeedbackRating" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Leave_StatusMaster" EntityType="Self.Leave_StatusMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LeaveHistoryMaster" EntityType="Self.LeaveHistoryMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LeaveList" EntityType="Self.LeaveList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LeaveMaster" EntityType="Self.LeaveMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LeaveUpdateCountDetails" EntityType="Self.LeaveUpdateCountDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="message" EntityType="Self.message" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Policytable" EntityType="Self.Policytable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SessionDetails" EntityType="Self.SessionDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentChapters" EntityType="Self.StudentChapters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentDocumentDetails" EntityType="Self.StudentDocumentDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentFilePlanDetails" EntityType="Self.StudentFilePlanDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentFolderDetails" EntityType="Self.StudentFolderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentImage" EntityType="Self.StudentImage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentsTests" EntityType="Self.StudentsTests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentTests" EntityType="Self.StudentTests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudetTestPaperResult" EntityType="Self.StudetTestPaperResult" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCartDetails" EntityType="Self.tblCartDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblChapterMaster" EntityType="Self.tblChapterMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCourseMaster" EntityType="Self.tblCourseMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDomainMaster" EntityType="Self.tblDomainMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDurationMaster" EntityType="Self.tblDurationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEnrollDetails" EntityType="Self.tblEnrollDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGenderMaster" EntityType="Self.tblGenderMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLevelMaster" EntityType="Self.tblLevelMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblOccupationMaster" EntityType="Self.tblOccupationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblOptionMaster" EntityType="Self.tblOptionMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPresentationMaster" EntityType="Self.tblPresentationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPriceMaster" EntityType="Self.tblPriceMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQualificationMaster" EntityType="Self.tblQualificationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQuestionBankMaster" EntityType="Self.tblQuestionBankMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQuestionbankQuestions" EntityType="Self.tblQuestionbankQuestions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQuestionMaster" EntityType="Self.tblQuestionMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRoleMaster" EntityType="Self.tblRoleMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentCourses" EntityType="Self.tblStudentCourses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblStudentDetails" EntityType="Self.tblStudentDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblsubmitAnswers" EntityType="Self.tblsubmitAnswers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTechnologyMaster" EntityType="Self.tblTechnologyMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTestMaster" EntityType="Self.tblTestMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTestQuestionMaster" EntityType="Self.tblTestQuestionMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestPaper" EntityType="Self.TestPaper" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestPaperNames" EntityType="Self.TestPaperNames" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Token" EntityType="Self.Token" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TransactionTable" EntityType="Self.TransactionTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UploadDocument" EntityType="Self.UploadDocument" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAttendance" EntityType="Self.UserAttendance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserBiometric" EntityType="Self.UserBiometric" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VA_Workflow_Leave_Master" EntityType="Self.VA_Workflow_Leave_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Workflow_Comment_HistoryTable" EntityType="Self.Workflow_Comment_HistoryTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WorkflowStageMaster" EntityType="Self.WorkflowStageMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="A_U_Client" EntityType="Self.A_U_Client" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [A_U_Client].[ID] AS [ID], 
+    [A_U_Client].[Secret] AS [Secret], 
+    [A_U_Client].[Name] AS [Name], 
+    [A_U_Client].[ApplicationType] AS [ApplicationType], 
+    [A_U_Client].[Active] AS [Active], 
+    [A_U_Client].[RefreshTokenLifetime] AS [RefreshTokenLifetime], 
+    [A_U_Client].[AllowedOrigin] AS [AllowedOrigin]
+    FROM [dbo].[A_U_Client] AS [A_U_Client]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="A_U_FunctionMaster" EntityType="Self.A_U_FunctionMaster" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [A_U_FunctionMaster].[FunctionID] AS [FunctionID], 
+    [A_U_FunctionMaster].[FunctionName] AS [FunctionName], 
+    [A_U_FunctionMaster].[CreatedBy] AS [CreatedBy], 
+    [A_U_FunctionMaster].[LastUpdated] AS [LastUpdated]
+    FROM [dbo].[A_U_FunctionMaster] AS [A_U_FunctionMaster]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ExamLevels" EntityType="Self.ExamLevels" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ExamLevels].[ID] AS [ID], 
+    [ExamLevels].[ExaminationLevel] AS [ExaminationLevel], 
+    [ExamLevels].[IsEnabled] AS [IsEnabled]
+    FROM [dbo].[ExamLevels] AS [ExamLevels]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="useractivity" EntityType="Self.useractivity" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [useractivity].[OnlineID] AS [OnlineID], 
+    [useractivity].[UserID] AS [UserID], 
+    [useractivity].[ConnectionID] AS [ConnectionID], 
+    [useractivity].[Status] AS [Status], 
+    [useractivity].[Avatar] AS [Avatar]
+    FROM [dbo].[useractivity] AS [useractivity]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_LeaveHistoryMaster_LeaveMaster" Association="Self.FK_LeaveHistoryMaster_LeaveMaster">
+      <End Role="LeaveMaster" EntitySet="LeaveMaster" />
+      <End Role="LeaveHistoryMaster" EntitySet="LeaveHistoryMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LeaveList_LeaveMaster" Association="Self.FK_LeaveList_LeaveMaster">
+      <End Role="LeaveMaster" EntitySet="LeaveMaster" />
+      <End Role="LeaveList" EntitySet="LeaveList" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

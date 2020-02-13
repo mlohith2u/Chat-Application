@@ -1,0 +1,119 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.Description;
+using Application.Dal.DataModel;
+
+namespace Application.Api.App.modules.NewControllers
+{
+    public class AuditDocumentsController : ApiController
+    {
+        private UserMgmtEntities db = new UserMgmtEntities();
+
+        // GET: api/AuditDocuments
+        public IQueryable<AuditDocument> GetAuditDocuments()
+        {
+            return db.AuditDocuments;
+        }
+
+        // GET: api/AuditDocuments/5
+        [ResponseType(typeof(AuditDocument))]
+        public async Task<IHttpActionResult> GetAuditDocument(int id)
+        {
+            AuditDocument auditDocument = await db.AuditDocuments.FindAsync(id);
+            if (auditDocument == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(auditDocument);
+        }
+
+        // PUT: api/AuditDocuments/5
+        [ResponseType(typeof(void))]
+        public async Task<IHttpActionResult> PutAuditDocument(int id, AuditDocument auditDocument)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (id != auditDocument.ID)
+            {
+                return BadRequest();
+            }
+
+            db.Entry(auditDocument).State = EntityState.Modified;
+
+            try
+            {
+                await db.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!AuditDocumentExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return StatusCode(HttpStatusCode.NoContent);
+        }
+
+        // POST: api/AuditDocuments
+        [ResponseType(typeof(AuditDocument))]
+        public async Task<IHttpActionResult> PostAuditDocument(AuditDocument auditDocument)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            db.AuditDocuments.Add(auditDocument);
+            await db.SaveChangesAsync();
+
+            return CreatedAtRoute("DefaultApi", new { id = auditDocument.ID }, auditDocument);
+        }
+
+        // DELETE: api/AuditDocuments/5
+        [ResponseType(typeof(AuditDocument))]
+        public async Task<IHttpActionResult> DeleteAuditDocument(int id)
+        {
+            AuditDocument auditDocument = await db.AuditDocuments.FindAsync(id);
+            if (auditDocument == null)
+            {
+                return NotFound();
+            }
+
+            db.AuditDocuments.Remove(auditDocument);
+            await db.SaveChangesAsync();
+
+            return Ok(auditDocument);
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private bool AuditDocumentExists(int id)
+        {
+            return db.AuditDocuments.Count(e => e.ID == id) > 0;
+        }
+    }
+}

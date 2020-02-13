@@ -1,0 +1,627 @@
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\ApplicationInsights.config
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Application.Api.dll.config
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Application.Api.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Application.Api.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Application.Dal.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Application.Security.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Castle.Core.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Castle.Windsor.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\EntityFramework.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\EntityFramework.SqlServer.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.Agent.Intercept.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.DependencyCollector.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.Web.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.WindowsServer.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.ApplicationInsights.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AspNet.Identity.Core.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Cors.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Hosting.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Security.Cookies.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Security.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Security.OAuth.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Newtonsoft.Json.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Owin.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Net.Http.Extensions.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Net.Http.Formatting.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Net.Http.Primitives.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Cors.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.Cors.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.Owin.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.WebHost.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\WebApiContrib.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\WebApiContrib.IoC.CastleWindsor.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Application.Dal.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Application.Security.pdb
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Castle.Core.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Castle.Windsor.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\EntityFramework.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\EntityFramework.SqlServer.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.DependencyCollector.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.Web.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AI.WindowsServer.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.ApplicationInsights.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AspNet.Identity.Core.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Cors.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Hosting.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Security.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Security.Cookies.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Microsoft.Owin.Security.OAuth.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\Newtonsoft.Json.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Net.Http.Extensions.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Net.Http.Formatting.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Net.Http.Primitives.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.Cors.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.Owin.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\bin\System.Web.Http.WebHost.xml
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\obj\Debug\Application.Api.csproj.App.config
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\obj\Debug\Application.Api.csprojResolveAssemblyReference.cache
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\obj\Debug\Application.Api.dll
+E:\AGM TEAM\New folder\HMS\Application.Web\Application.Api\obj\Debug\Application.Api.pdb
+G:\Template\Application.Api\bin\ApplicationInsights.config
+G:\Template\Application.Api\bin\Application.Api.dll.config
+G:\Template\Application.Api\bin\Application.Api.dll
+G:\Template\Application.Api\bin\Application.Api.pdb
+G:\Template\Application.Api\bin\Application.Dal.dll
+G:\Template\Application.Api\bin\Application.Security.dll
+G:\Template\Application.Api\bin\Castle.Core.dll
+G:\Template\Application.Api\bin\Castle.Windsor.dll
+G:\Template\Application.Api\bin\EntityFramework.dll
+G:\Template\Application.Api\bin\EntityFramework.SqlServer.dll
+G:\Template\Application.Api\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Template\Application.Api\bin\Microsoft.AI.DependencyCollector.dll
+G:\Template\Application.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Template\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Template\Application.Api\bin\Microsoft.AI.Web.dll
+G:\Template\Application.Api\bin\Microsoft.AI.WindowsServer.dll
+G:\Template\Application.Api\bin\Microsoft.ApplicationInsights.dll
+G:\Template\Application.Api\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Template\Application.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.Cors.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.Hosting.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.Security.dll
+G:\Template\Application.Api\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Template\Application.Api\bin\Newtonsoft.Json.dll
+G:\Template\Application.Api\bin\Owin.dll
+G:\Template\Application.Api\bin\System.Net.Http.Extensions.dll
+G:\Template\Application.Api\bin\System.Net.Http.Formatting.dll
+G:\Template\Application.Api\bin\System.Net.Http.Primitives.dll
+G:\Template\Application.Api\bin\System.Web.Cors.dll
+G:\Template\Application.Api\bin\System.Web.Http.Cors.dll
+G:\Template\Application.Api\bin\System.Web.Http.dll
+G:\Template\Application.Api\bin\System.Web.Http.Owin.dll
+G:\Template\Application.Api\bin\System.Web.Http.WebHost.dll
+G:\Template\Application.Api\bin\WebApiContrib.dll
+G:\Template\Application.Api\bin\WebApiContrib.IoC.CastleWindsor.dll
+G:\Template\Application.Api\bin\Application.Dal.pdb
+G:\Template\Application.Api\bin\Application.Dal.dll.config
+G:\Template\Application.Api\bin\Application.Security.pdb
+G:\Template\Application.Api\bin\Application.Security.dll.config
+G:\Template\Application.Api\bin\Castle.Core.xml
+G:\Template\Application.Api\bin\Castle.Windsor.xml
+G:\Template\Application.Api\bin\EntityFramework.xml
+G:\Template\Application.Api\bin\EntityFramework.SqlServer.xml
+G:\Template\Application.Api\bin\Microsoft.AI.DependencyCollector.xml
+G:\Template\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Template\Application.Api\bin\Microsoft.AI.Web.xml
+G:\Template\Application.Api\bin\Microsoft.AI.WindowsServer.xml
+G:\Template\Application.Api\bin\Microsoft.ApplicationInsights.xml
+G:\Template\Application.Api\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Template\Application.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.Cors.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.Hosting.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.Security.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Template\Application.Api\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Template\Application.Api\bin\Newtonsoft.Json.xml
+G:\Template\Application.Api\bin\System.Net.Http.Extensions.xml
+G:\Template\Application.Api\bin\System.Net.Http.Formatting.xml
+G:\Template\Application.Api\bin\System.Net.Http.Primitives.xml
+G:\Template\Application.Api\bin\System.Web.Http.xml
+G:\Template\Application.Api\bin\System.Web.Http.Cors.xml
+G:\Template\Application.Api\bin\System.Web.Http.Owin.xml
+G:\Template\Application.Api\bin\System.Web.Http.WebHost.xml
+G:\Template\Application.Api\obj\Debug\Application.Api.csproj.App.config
+G:\Template\Application.Api\obj\Debug\Application.Api.csprojResolveAssemblyReference.cache
+G:\Template\Application.Api\obj\Debug\Application.Api.csproj.CoreCompileInputs.cache
+G:\Template\Application.Api\obj\Debug\Application.Api.dll
+G:\Template\Application.Api\obj\Debug\Application.Api.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\ApplicationInsights.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Api.dll.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Api.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Api.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Dal.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Security.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Core.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Windsor.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.SqlServer.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.Web.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Newtonsoft.Json.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Owin.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Extensions.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Formatting.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Primitives.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Cors.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Cors.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Owin.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.WebHost.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\WebApiContrib.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\WebApiContrib.IoC.CastleWindsor.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Dal.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Dal.dll.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Security.pdb
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Security.dll.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Core.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Windsor.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.SqlServer.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.Web.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Newtonsoft.Json.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Extensions.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Formatting.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Primitives.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Cors.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Owin.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.WebHost.xml
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.App.config
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.csprojResolveAssemblyReference.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.CoreCompileInputs.cache
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.dll
+G:\Applications\UserManagement\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\ApplicationInsights.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Api.dll.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Api.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Api.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Antlr3.Runtime.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Dal.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Security.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Core.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Windsor.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.SqlServer.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.Web.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Web.Infrastructure.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Newtonsoft.Json.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\OptimizationHelper.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Owin.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Extensions.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Formatting.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Primitives.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Cors.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Helpers.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Cors.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Owin.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.WebHost.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Mvc.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Optimization.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Razor.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.WebPages.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\WebApiContrib.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\WebApiContrib.IoC.CastleWindsor.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\WebGrease.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Dal.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Dal.dll.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Security.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Application.Security.dll.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Antlr3.Runtime.pdb
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Core.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Castle.Windsor.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\EntityFramework.SqlServer.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.Web.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\Newtonsoft.Json.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\OptimizationHelper.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Extensions.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Formatting.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Net.Http.Primitives.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Helpers.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Cors.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.Owin.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Http.WebHost.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Mvc.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Optimization.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.Razor.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.WebPages.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.xml
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.App.config
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.csprojResolveAssemblyReference.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.CoreCompileInputs.cache
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.dll
+C:\Divya\audit\UserManagement + DMS + Workflow + Image Capturing\APP\UserManagement\Application.Api\obj\Debug\Application.Api.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\ApplicationInsights.config
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Api.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Api.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Api.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Antlr3.Runtime.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Bal.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Dal.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Security.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Castle.Core.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Castle.Windsor.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\EntityFramework.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\EntityFramework.SqlServer.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.Web.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Security.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Web.Infrastructure.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Newtonsoft.Json.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\OptimizationHelper.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Owin.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Net.Http.Extensions.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Net.Http.Formatting.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Net.Http.Primitives.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Cors.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Helpers.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.Cors.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.Owin.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.WebHost.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Mvc.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Optimization.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Razor.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.WebPages.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\WebApiContrib.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\WebApiContrib.IoC.CastleWindsor.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\WebGrease.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Bal.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Bal.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Dal.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Dal.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Security.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Application.Security.dll.config
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Antlr3.Runtime.pdb
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Castle.Core.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Castle.Windsor.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\EntityFramework.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\EntityFramework.SqlServer.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.Web.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Security.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\Newtonsoft.Json.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\OptimizationHelper.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Net.Http.Extensions.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Net.Http.Formatting.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Net.Http.Primitives.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Helpers.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.Cors.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.Owin.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Http.WebHost.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Mvc.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Optimization.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.Razor.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.WebPages.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.xml
+E:\Audit(6-10-18)\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.App.config
+E:\Audit(6-10-18)\UserManagement\Application.Api\obj\Debug\Application.Api.csprojAssemblyReference.cache
+E:\Audit(6-10-18)\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.CoreCompileInputs.cache
+E:\Audit(6-10-18)\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.CopyComplete
+E:\Audit(6-10-18)\UserManagement\Application.Api\obj\Debug\Application.Api.dll
+E:\Audit(6-10-18)\UserManagement\Application.Api\obj\Debug\Application.Api.pdb
+E:\Full Chat\UserManagement\Application.Api\bin\ApplicationInsights.config
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Api.dll.config
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Api.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Api.pdb
+E:\Full Chat\UserManagement\Application.Api\bin\Antlr3.Runtime.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Bal.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Dal.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Security.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Castle.Core.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Castle.Windsor.dll
+E:\Full Chat\UserManagement\Application.Api\bin\EntityFramework.dll
+E:\Full Chat\UserManagement\Application.Api\bin\EntityFramework.SqlServer.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.Web.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Web.Infrastructure.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Newtonsoft.Json.dll
+E:\Full Chat\UserManagement\Application.Api\bin\OptimizationHelper.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Owin.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Extensions.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Formatting.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Primitives.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Cors.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Helpers.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Cors.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Owin.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.WebHost.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Mvc.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Optimization.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Razor.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.dll
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.dll
+E:\Full Chat\UserManagement\Application.Api\bin\WebApiContrib.dll
+E:\Full Chat\UserManagement\Application.Api\bin\WebApiContrib.IoC.CastleWindsor.dll
+E:\Full Chat\UserManagement\Application.Api\bin\WebGrease.dll
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Bal.pdb
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Bal.dll.config
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Dal.pdb
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Dal.dll.config
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Security.pdb
+E:\Full Chat\UserManagement\Application.Api\bin\Application.Security.dll.config
+E:\Full Chat\UserManagement\Application.Api\bin\Antlr3.Runtime.pdb
+E:\Full Chat\UserManagement\Application.Api\bin\Castle.Core.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Castle.Windsor.xml
+E:\Full Chat\UserManagement\Application.Api\bin\EntityFramework.xml
+E:\Full Chat\UserManagement\Application.Api\bin\EntityFramework.SqlServer.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.Web.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Full Chat\UserManagement\Application.Api\bin\Newtonsoft.Json.xml
+E:\Full Chat\UserManagement\Application.Api\bin\OptimizationHelper.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Extensions.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Formatting.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Primitives.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Helpers.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Cors.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Owin.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.WebHost.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Mvc.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Optimization.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.Razor.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.xml
+E:\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.xml
+E:\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.App.config
+E:\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.csprojAssemblyReference.cache
+E:\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.CopyComplete
+E:\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.dll
+E:\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.pdb
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\ApplicationInsights.config
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Api.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Api.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Api.pdb
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Antlr3.Runtime.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Bal.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Dal.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Security.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Castle.Core.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Castle.Windsor.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\EntityFramework.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\EntityFramework.SqlServer.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\IBM.Cloud.SDK.Core.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\IBM.Watson.Common.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\IBM.Watson.ToneAnalyzer.v3.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\JsonSubTypes.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\JWT.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.Web.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Web.Infrastructure.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Newtonsoft.Json.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\OptimizationHelper.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Owin.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Extensions.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Formatting.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Primitives.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Cors.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Helpers.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Cors.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Owin.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.WebHost.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Mvc.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Optimization.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Razor.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\WebApiContrib.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\WebApiContrib.IoC.CastleWindsor.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\WebGrease.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Bal.pdb
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Bal.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Dal.pdb
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Dal.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Security.pdb
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Application.Security.dll.config
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Antlr3.Runtime.pdb
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Castle.Core.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Castle.Windsor.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\EntityFramework.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\EntityFramework.SqlServer.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\JWT.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.DependencyCollector.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.Web.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AI.WindowsServer.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.ApplicationInsights.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Cors.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.HttpListener.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Hosting.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Newtonsoft.Json.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\OptimizationHelper.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Extensions.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Formatting.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Net.Http.Primitives.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Helpers.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Cors.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.Owin.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Http.WebHost.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Mvc.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Optimization.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.Razor.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Deployment.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\System.Web.WebPages.Razor.xml
+D:\Temp\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.App.config
+D:\Temp\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.csprojAssemblyReference.cache
+D:\Temp\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.csproj.CopyComplete
+D:\Temp\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.dll
+D:\Temp\Full Chat\UserManagement\Application.Api\obj\Debug\Application.Api.pdb
+D:\Temp\Full Chat\UserManagement\Application.Api\bin\Aylien.TextApi.dll
